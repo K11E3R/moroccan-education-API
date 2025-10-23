@@ -1,10 +1,11 @@
 {
   "collection_date": "2025-10-23T15:10:13.285759",
   "base_url": "https://www.alloschool.com",
+  "cleaning_date": "2025-10-23T17:38:29.894081",
   "statistics": {
-    "total_levels": 11,
-    "total_subjects": 13,
-    "total_content": 93
+    "total_levels": 12,
+    "total_subjects": 96,
+    "total_content": 89
   },
   "levels": [
     {
@@ -78,6 +79,13 @@
       "category": "lycee"
     },
     {
+      "id": "lycee-1bac",
+      "name": "1ère Bac",
+      "name_ar": "الأولى باكالوريا",
+      "order": 11,
+      "category": "lycee"
+    },
+    {
       "id": "lycee-2bac",
       "name": "2ème Bac",
       "name_ar": "الثانية باكالوريا",
@@ -87,990 +95,1483 @@
   ],
   "subjects": [
     {
-      "id": "anglais",
-      "name": "Anglais",
-      "name_ar": "",
-      "levels": [
-        "college-1",
-        "college-2",
-        "college-3",
-        "lycee-2bac",
-        "lycee-tc"
-      ],
-      "content_count": 17
-    },
-    {
-      "id": "comptabilite-et-mathematiques-financieres",
-      "name": "Comptabilité et Mathématiques financières",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ],
-      "content_count": 2
-    },
-    {
-      "id": "droit",
-      "name": "Droit",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ],
-      "content_count": 2
-    },
-    {
-      "id": "fran-ais",
-      "name": "Français",
-      "name_ar": "",
-      "levels": [
-        "college-1",
-        "college-2",
-        "college-3",
-        "lycee-2bac",
-        "lycee-tc",
-        "primaire-1",
-        "primaire-2",
-        "primaire-3",
-        "primaire-4",
-        "primaire-5",
-        "primaire-6"
-      ],
-      "content_count": 23
-    },
-    {
-      "id": "informatique",
-      "name": "Informatique",
-      "name_ar": "",
-      "levels": [
-        "college-1",
-        "college-2",
-        "college-3",
-        "lycee-tc"
-      ],
-      "content_count": 5
-    },
-    {
-      "id": "informatique-de-gestion",
-      "name": "Informatique de gestion",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ],
-      "content_count": 2
-    },
-    {
-      "id": "mathematiques",
+      "id": "mathematiques-primaire-1",
       "name": "Mathématiques",
-      "name_ar": "",
-      "levels": [
-        "college-1",
-        "college-2",
-        "college-3",
-        "lycee-2bac",
-        "lycee-tc"
-      ],
-      "content_count": 14
+      "name_ar": "الرياضيات",
+      "level_id": "primaire-1",
+      "level_name": "1ère Année Primaire",
+      "level_name_ar": "السنة الأولى ابتدائي"
     },
     {
-      "id": "physique-et-chimie",
-      "name": "Physique et Chimie",
-      "name_ar": "",
-      "levels": [
-        "college-1",
-        "college-2",
-        "college-3",
-        "lycee-2bac",
-        "lycee-tc"
-      ],
-      "content_count": 12
+      "id": "mathematiques-primaire-2",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "primaire-2",
+      "level_name": "2ème Année Primaire",
+      "level_name_ar": "السنة الثانية ابتدائي"
     },
     {
-      "id": "sciences-vegetales-et-animales",
-      "name": "Sciences Végétales et Animales",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ],
-      "content_count": 1
+      "id": "mathematiques-primaire-3",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "primaire-3",
+      "level_name": "3ème Année Primaire",
+      "level_name_ar": "السنة الثالثة ابتدائي"
     },
     {
-      "id": "sciences-de-l-ingenieur",
-      "name": "Sciences de l'ingénieur",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac",
-        "lycee-tc"
-      ],
-      "content_count": 4
+      "id": "mathematiques-primaire-4",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "primaire-4",
+      "level_name": "4ème Année Primaire",
+      "level_name_ar": "السنة الرابعة ابتدائي"
     },
     {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt",
-      "name": "Sciences de la Vie et de la Terre (SVT)",
-      "name_ar": "",
-      "levels": [
-        "college-1",
-        "college-2",
-        "college-3",
-        "lycee-2bac",
-        "lycee-tc"
-      ],
-      "content_count": 7
+      "id": "mathematiques-primaire-5",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "primaire-5",
+      "level_name": "5ème Année Primaire",
+      "level_name_ar": "السنة الخامسة ابتدائي"
     },
     {
-      "id": "economie-et-organisation-administrative-des-entreprises",
-      "name": "Économie et Organisation Administrative des Entreprises",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ],
-      "content_count": 2
+      "id": "mathematiques-primaire-6",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "primaire-6",
+      "level_name": "6ème Année Primaire",
+      "level_name_ar": "السنة السادسة ابتدائي"
     },
     {
-      "id": "economie-generale-et-statistiques",
-      "name": "Économie générale et Statistiques",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ],
-      "content_count": 2
+      "id": "mathematiques-college-1",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "mathematiques-college-2",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "mathematiques-college-3",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "mathematiques-lycee-tc",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "mathematiques-lycee-1bac",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "mathematiques-lycee-2bac",
+      "name": "Mathématiques",
+      "name_ar": "الرياضيات",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "francais-primaire-1",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "primaire-1",
+      "level_name": "1ère Année Primaire",
+      "level_name_ar": "السنة الأولى ابتدائي"
+    },
+    {
+      "id": "francais-primaire-2",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "primaire-2",
+      "level_name": "2ème Année Primaire",
+      "level_name_ar": "السنة الثانية ابتدائي"
+    },
+    {
+      "id": "francais-primaire-3",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "primaire-3",
+      "level_name": "3ème Année Primaire",
+      "level_name_ar": "السنة الثالثة ابتدائي"
+    },
+    {
+      "id": "francais-primaire-4",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "primaire-4",
+      "level_name": "4ème Année Primaire",
+      "level_name_ar": "السنة الرابعة ابتدائي"
+    },
+    {
+      "id": "francais-primaire-5",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "primaire-5",
+      "level_name": "5ème Année Primaire",
+      "level_name_ar": "السنة الخامسة ابتدائي"
+    },
+    {
+      "id": "francais-primaire-6",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "primaire-6",
+      "level_name": "6ème Année Primaire",
+      "level_name_ar": "السنة السادسة ابتدائي"
+    },
+    {
+      "id": "francais-college-1",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "francais-college-2",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "francais-college-3",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "francais-lycee-tc",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "francais-lycee-1bac",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "francais-lycee-2bac",
+      "name": "Français",
+      "name_ar": "الفرنسية",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "arabe-primaire-1",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "primaire-1",
+      "level_name": "1ère Année Primaire",
+      "level_name_ar": "السنة الأولى ابتدائي"
+    },
+    {
+      "id": "arabe-primaire-2",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "primaire-2",
+      "level_name": "2ème Année Primaire",
+      "level_name_ar": "السنة الثانية ابتدائي"
+    },
+    {
+      "id": "arabe-primaire-3",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "primaire-3",
+      "level_name": "3ème Année Primaire",
+      "level_name_ar": "السنة الثالثة ابتدائي"
+    },
+    {
+      "id": "arabe-primaire-4",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "primaire-4",
+      "level_name": "4ème Année Primaire",
+      "level_name_ar": "السنة الرابعة ابتدائي"
+    },
+    {
+      "id": "arabe-primaire-5",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "primaire-5",
+      "level_name": "5ème Année Primaire",
+      "level_name_ar": "السنة الخامسة ابتدائي"
+    },
+    {
+      "id": "arabe-primaire-6",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "primaire-6",
+      "level_name": "6ème Année Primaire",
+      "level_name_ar": "السنة السادسة ابتدائي"
+    },
+    {
+      "id": "arabe-college-1",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "arabe-college-2",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "arabe-college-3",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "arabe-lycee-tc",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "arabe-lycee-1bac",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "arabe-lycee-2bac",
+      "name": "Arabe",
+      "name_ar": "العربية",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "sciences-primaire-1",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "primaire-1",
+      "level_name": "1ère Année Primaire",
+      "level_name_ar": "السنة الأولى ابتدائي"
+    },
+    {
+      "id": "sciences-primaire-2",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "primaire-2",
+      "level_name": "2ème Année Primaire",
+      "level_name_ar": "السنة الثانية ابتدائي"
+    },
+    {
+      "id": "sciences-primaire-3",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "primaire-3",
+      "level_name": "3ème Année Primaire",
+      "level_name_ar": "السنة الثالثة ابتدائي"
+    },
+    {
+      "id": "sciences-primaire-4",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "primaire-4",
+      "level_name": "4ème Année Primaire",
+      "level_name_ar": "السنة الرابعة ابتدائي"
+    },
+    {
+      "id": "sciences-primaire-5",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "primaire-5",
+      "level_name": "5ème Année Primaire",
+      "level_name_ar": "السنة الخامسة ابتدائي"
+    },
+    {
+      "id": "sciences-primaire-6",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "primaire-6",
+      "level_name": "6ème Année Primaire",
+      "level_name_ar": "السنة السادسة ابتدائي"
+    },
+    {
+      "id": "sciences-college-1",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "sciences-college-2",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "sciences-college-3",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "sciences-lycee-tc",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "sciences-lycee-1bac",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "sciences-lycee-2bac",
+      "name": "Sciences",
+      "name_ar": "العلوم",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "histoire-college-1",
+      "name": "Histoire",
+      "name_ar": "التاريخ",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "histoire-college-2",
+      "name": "Histoire",
+      "name_ar": "التاريخ",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "histoire-college-3",
+      "name": "Histoire",
+      "name_ar": "التاريخ",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "histoire-lycee-tc",
+      "name": "Histoire",
+      "name_ar": "التاريخ",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "histoire-lycee-1bac",
+      "name": "Histoire",
+      "name_ar": "التاريخ",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "histoire-lycee-2bac",
+      "name": "Histoire",
+      "name_ar": "التاريخ",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "geographie-college-1",
+      "name": "Géographie",
+      "name_ar": "الجغرافيا",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "geographie-college-2",
+      "name": "Géographie",
+      "name_ar": "الجغرافيا",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "geographie-college-3",
+      "name": "Géographie",
+      "name_ar": "الجغرافيا",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "geographie-lycee-tc",
+      "name": "Géographie",
+      "name_ar": "الجغرافيا",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "geographie-lycee-1bac",
+      "name": "Géographie",
+      "name_ar": "الجغرافيا",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "geographie-lycee-2bac",
+      "name": "Géographie",
+      "name_ar": "الجغرافيا",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "anglais-college-1",
+      "name": "Anglais",
+      "name_ar": "الإنجليزية",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "anglais-college-2",
+      "name": "Anglais",
+      "name_ar": "الإنجليزية",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "anglais-college-3",
+      "name": "Anglais",
+      "name_ar": "الإنجليزية",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "anglais-lycee-tc",
+      "name": "Anglais",
+      "name_ar": "الإنجليزية",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "anglais-lycee-1bac",
+      "name": "Anglais",
+      "name_ar": "الإنجليزية",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "anglais-lycee-2bac",
+      "name": "Anglais",
+      "name_ar": "الإنجليزية",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "islamique-primaire-1",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "primaire-1",
+      "level_name": "1ère Année Primaire",
+      "level_name_ar": "السنة الأولى ابتدائي"
+    },
+    {
+      "id": "islamique-primaire-2",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "primaire-2",
+      "level_name": "2ème Année Primaire",
+      "level_name_ar": "السنة الثانية ابتدائي"
+    },
+    {
+      "id": "islamique-primaire-3",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "primaire-3",
+      "level_name": "3ème Année Primaire",
+      "level_name_ar": "السنة الثالثة ابتدائي"
+    },
+    {
+      "id": "islamique-primaire-4",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "primaire-4",
+      "level_name": "4ème Année Primaire",
+      "level_name_ar": "السنة الرابعة ابتدائي"
+    },
+    {
+      "id": "islamique-primaire-5",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "primaire-5",
+      "level_name": "5ème Année Primaire",
+      "level_name_ar": "السنة الخامسة ابتدائي"
+    },
+    {
+      "id": "islamique-primaire-6",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "primaire-6",
+      "level_name": "6ème Année Primaire",
+      "level_name_ar": "السنة السادسة ابتدائي"
+    },
+    {
+      "id": "islamique-college-1",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "islamique-college-2",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "islamique-college-3",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "islamique-lycee-tc",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "islamique-lycee-1bac",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "islamique-lycee-2bac",
+      "name": "Éducation Islamique",
+      "name_ar": "التربية الإسلامية",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "eps-primaire-1",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "primaire-1",
+      "level_name": "1ère Année Primaire",
+      "level_name_ar": "السنة الأولى ابتدائي"
+    },
+    {
+      "id": "eps-primaire-2",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "primaire-2",
+      "level_name": "2ème Année Primaire",
+      "level_name_ar": "السنة الثانية ابتدائي"
+    },
+    {
+      "id": "eps-primaire-3",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "primaire-3",
+      "level_name": "3ème Année Primaire",
+      "level_name_ar": "السنة الثالثة ابتدائي"
+    },
+    {
+      "id": "eps-primaire-4",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "primaire-4",
+      "level_name": "4ème Année Primaire",
+      "level_name_ar": "السنة الرابعة ابتدائي"
+    },
+    {
+      "id": "eps-primaire-5",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "primaire-5",
+      "level_name": "5ème Année Primaire",
+      "level_name_ar": "السنة الخامسة ابتدائي"
+    },
+    {
+      "id": "eps-primaire-6",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "primaire-6",
+      "level_name": "6ème Année Primaire",
+      "level_name_ar": "السنة السادسة ابتدائي"
+    },
+    {
+      "id": "eps-college-1",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "eps-college-2",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "eps-college-3",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "eps-lycee-tc",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "eps-lycee-1bac",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "eps-lycee-2bac",
+      "name": "Éducation Physique",
+      "name_ar": "التربية البدنية",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
+    },
+    {
+      "id": "informatique-college-1",
+      "name": "Informatique",
+      "name_ar": "المعلوماتية",
+      "level_id": "college-1",
+      "level_name": "1ère Année Collège",
+      "level_name_ar": "السنة الأولى إعدادي"
+    },
+    {
+      "id": "informatique-college-2",
+      "name": "Informatique",
+      "name_ar": "المعلوماتية",
+      "level_id": "college-2",
+      "level_name": "2ème Année Collège",
+      "level_name_ar": "السنة الثانية إعدادي"
+    },
+    {
+      "id": "informatique-college-3",
+      "name": "Informatique",
+      "name_ar": "المعلوماتية",
+      "level_id": "college-3",
+      "level_name": "3ème Année Collège",
+      "level_name_ar": "السنة الثالثة إعدادي"
+    },
+    {
+      "id": "informatique-lycee-tc",
+      "name": "Informatique",
+      "name_ar": "المعلوماتية",
+      "level_id": "lycee-tc",
+      "level_name": "Tronc Commun",
+      "level_name_ar": "الجذع المشترك"
+    },
+    {
+      "id": "informatique-lycee-1bac",
+      "name": "Informatique",
+      "name_ar": "المعلوماتية",
+      "level_id": "lycee-1bac",
+      "level_name": "1ère Bac",
+      "level_name_ar": "الأولى باكالوريا"
+    },
+    {
+      "id": "informatique-lycee-2bac",
+      "name": "Informatique",
+      "name_ar": "المعلوماتية",
+      "level_id": "lycee-2bac",
+      "level_name": "2ème Bac",
+      "level_name_ar": "الثانية باكالوريا"
     }
   ],
   "content": [
     {
       "id": "cours-francais-tronc-commun-sciences",
       "title": "Français: Tronc commun Sciences",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-tronc-commun-sciences",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-tc",
+      "url": "https://www.alloschool.com/course/francais-tronc-commun-sciences"
     },
     {
       "id": "cours-informatique-tronc-commun-sciences",
       "title": "Informatique: Tronc Commun Sciences",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-tronc-commun-sciences",
-      "subject_id": "informatique"
+      "subject_id": "informatique-lycee-tc",
+      "url": "https://www.alloschool.com/course/informatique-tronc-commun-sciences"
     },
     {
       "id": "cours-francais-tronc-commun-technologique",
       "title": "Français: Tronc commun Technologique",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-tronc-commun-technologique",
-      "subject_id": "fran-ais"
-    },
-    {
-      "id": "cours-anglais-tronc-commun-lettres-et-sciences-humaines",
-      "title": "Anglais: Tronc commun Lettres et Sciences Humaines",
-      "title_ar": "",
-      "level_id": "lycee-tc",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-tronc-commun-lettres-et-sciences-humaines",
-      "subject_id": "anglais"
+      "subject_id": "francais-lycee-tc",
+      "url": "https://www.alloschool.com/course/francais-tronc-commun-technologique"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-tronc-commun-technologique",
       "title": "Sciences de l'ingénieur: Tronc commun Technologique",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-tronc-commun-technologique",
-      "subject_id": "sciences-de-l-ingenieur"
+      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-tronc-commun-technologique"
     },
     {
       "id": "cours-informatique-tronc-commun-technologique",
       "title": "Informatique: Tronc Commun Technologique",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-tronc-commun-technologique",
-      "subject_id": "informatique"
+      "subject_id": "informatique-lycee-tc",
+      "url": "https://www.alloschool.com/course/informatique-tronc-commun-technologique"
     },
     {
       "id": "cours-anglais-tronc-commun-technologique",
       "title": "Anglais: Tronc commun Technologique",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-tronc-commun-technologique",
-      "subject_id": "anglais"
-    },
-    {
-      "id": "cours-francais-tronc-commun-lettres-et-sciences-humaines",
-      "title": "Français: Tronc commun Lettres et Sciences Humaines",
-      "title_ar": "",
-      "level_id": "lycee-tc",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-tronc-commun-lettres-et-sciences-humaines",
-      "subject_id": "fran-ais"
+      "subject_id": "anglais-lycee-tc",
+      "url": "https://www.alloschool.com/course/anglais-tronc-commun-technologique"
     },
     {
       "id": "cours-anglais-tronc-commun-sciences",
       "title": "Anglais: Tronc commun Sciences",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-tronc-commun-sciences",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-tc",
+      "url": "https://www.alloschool.com/course/anglais-tronc-commun-sciences"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-mathematiques-b",
       "title": "Français: 2eme BAC Sciences Mathématiques B",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-b",
-      "subject_id": "fran-ais"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-b"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
       "title": "Français: 2eme BAC Sciences de la Vie et de la Terre",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-mathematiques-a",
       "title": "Français: 2eme BAC Sciences Mathématiques A",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-a",
-      "subject_id": "fran-ais"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-a"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-physiques",
       "title": "Français: 2eme BAC Sciences Physiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-physiques",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-physiques"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b",
       "title": "Sciences de l'ingénieur: 2eme BAC Sciences Mathématiques B",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b",
-      "subject_id": "sciences-de-l-ingenieur"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-mathematiques-b",
       "title": "Anglais: 2ème BAC Sciences Mathématiques B",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-b",
-      "subject_id": "anglais"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-b"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-mathematiques-a",
       "title": "Anglais : 2ème BAC Sciences Mathématiques A",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-a",
-      "subject_id": "anglais"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-a"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
       "title": "Anglais: 2ème BAC Sciences de la Vie et de la Terre",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-physiques",
       "title": "Anglais: 2ème BAC Sciences Physiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-physiques",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-physiques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-et-technologies-mecaniques",
       "title": "Français: 2eme BAC Sciences et Technologies Mécaniques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-mecaniques",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-et-technologies-electriques",
       "title": "Français: 2eme BAC Sciences et Technologies Electriques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-electriques",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-electriques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-agronomiques",
       "title": "Français: 2eme BAC Sciences Agronomiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-agronomiques",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques",
       "title": "Sciences Végétales et Animales: 2eme BAC Sciences Agronomiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques",
-      "subject_id": "sciences-vegetales-et-animales"
+      "url": "https://www.alloschool.com/course/sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques",
       "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Mécaniques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques",
-      "subject_id": "sciences-de-l-ingenieur"
+      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques",
       "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Electriques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques",
-      "subject_id": "sciences-de-l-ingenieur"
+      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-et-technologies-mecaniques",
       "title": "Anglais: 2ème BAC Sciences et Technologies Mécaniques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-mecaniques",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-agronomiques",
       "title": "Anglais: 2ème BAC Sciences Agronomiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-agronomiques",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-et-technologies-electriques",
       "title": "Anglais: 2ème BAC Sciences et Technologies Électriques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-electriques",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-electriques"
     },
     {
       "id": "cours-informatique-de-gestion-2eme-bac-sciences-economiques",
       "title": "Informatique de gestion: 2eme BAC Sciences Economiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-economiques",
-      "subject_id": "informatique-de-gestion"
+      "subject_id": "informatique-lycee-2bac",
+      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc",
       "title": "Français: 2eme BAC Sciences Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Informatique de gestion: 2eme BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "informatique-de-gestion"
+      "subject_id": "informatique-lycee-2bac",
+      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-droit-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Droit: 2eme BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "droit"
-    },
-    {
-      "id": "cours-francais-2eme-bac-sciences-humaines",
-      "title": "Français: 2eme BAC Sciences Humaines",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-humaines",
-      "subject_id": "fran-ais"
+      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-francais-2eme-bac-lettres",
       "title": "Français: 2eme BAC Lettres",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-lettres",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-lettres"
     },
     {
       "id": "cours-economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Économie et Organisation Administrative des Entreprises : 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "economie-et-organisation-administrative-des-entreprises"
+      "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Économie générale et Statistiques : 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "economie-generale-et-statistiques"
+      "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Anglais: 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Comptabilité et Mathématiques financières : 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "comptabilite-et-mathematiques-financieres"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-economiques",
       "title": "Français: 2eme BAC Sciences Economiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-economiques",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-economiques",
       "title": "Mathématiques : 2ème BAC Sciences Économiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-economiques",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Mathématiques : 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques",
       "title": "Économie et Organisation Administrative des Entreprises : 2ème BAC Sciences Économiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques",
-      "subject_id": "economie-et-organisation-administrative-des-entreprises"
+      "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-droit-2eme-bac-sciences-economiques",
       "title": "Droit: 2ème BAC Sciences Économiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-economiques",
-      "subject_id": "droit"
+      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques",
       "title": "Comptabilité et Mathématiques financières : 2ème BAC Sciences Économiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques",
-      "subject_id": "comptabilite-et-mathematiques-financieres"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-economiques",
       "title": "Anglais: 2ème BAC Sciences Économiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-economiques",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-economie-generale-et-statistiques-2eme-bac-sciences-economiques",
       "title": "Économie générale et Statistiques : 2ème BAC Sciences Économiques",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-economiques",
-      "subject_id": "economie-generale-et-statistiques"
+      "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-francais-2eme-annee-college",
       "title": "Français: 2ème Année Collège",
-      "title_ar": "",
       "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-annee-college",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-college-2",
+      "url": "https://www.alloschool.com/course/francais-2eme-annee-college"
     },
     {
       "id": "cours-francais-1ere-annee-college",
       "title": "Français: 1ère Année Collège",
-      "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-1ere-annee-college",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-college-1",
+      "url": "https://www.alloschool.com/course/francais-1ere-annee-college"
     },
     {
       "id": "cours-informatique-2eme-annee-college",
       "title": "Informatique: 2ème Année Collège",
-      "title_ar": "",
       "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-2eme-annee-college",
-      "subject_id": "informatique"
+      "subject_id": "informatique-college-2",
+      "url": "https://www.alloschool.com/course/informatique-2eme-annee-college"
     },
     {
       "id": "cours-informatique-1ere-annee-college",
       "title": "Informatique: 1ère Année Collège",
-      "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-1ere-annee-college",
-      "subject_id": "informatique"
+      "subject_id": "informatique-college-1",
+      "url": "https://www.alloschool.com/course/informatique-1ere-annee-college"
     },
     {
       "id": "cours-informatique-3eme-annee-college",
       "title": "Informatique: 3ème Année Collège",
-      "title_ar": "",
       "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-3eme-annee-college",
-      "subject_id": "informatique"
+      "subject_id": "informatique-college-3",
+      "url": "https://www.alloschool.com/course/informatique-3eme-annee-college"
     },
     {
       "id": "cours-francais-3eme-annee-college",
       "title": "Français: 3ème Année Collège",
-      "title_ar": "",
       "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-3eme-annee-college",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-college-3",
+      "url": "https://www.alloschool.com/course/francais-3eme-annee-college"
     },
     {
       "id": "cours-anglais-2eme-annee-college",
       "title": "Anglais: 2ème Année Collège",
-      "title_ar": "",
       "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-annee-college",
-      "subject_id": "anglais"
+      "subject_id": "anglais-college-2",
+      "url": "https://www.alloschool.com/course/anglais-2eme-annee-college"
     },
     {
       "id": "cours-anglais-1ere-annee-college",
       "title": "Anglais: 1ère Année Collège",
-      "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-1ere-annee-college",
-      "subject_id": "anglais"
+      "subject_id": "anglais-college-1",
+      "url": "https://www.alloschool.com/course/anglais-1ere-annee-college"
     },
     {
       "id": "cours-anglais-3eme-annee-college",
       "title": "Anglais: 3ème Année Collège",
-      "title_ar": "",
       "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-3eme-annee-college",
-      "subject_id": "anglais"
+      "subject_id": "anglais-college-3",
+      "url": "https://www.alloschool.com/course/anglais-3eme-annee-college"
     },
     {
       "id": "cours-francais-6eme-annee-primaire",
       "title": "Français: 6ème Année Primaire",
-      "title_ar": "",
       "level_id": "primaire-6",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-6eme-annee-primaire",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-primaire-6",
+      "url": "https://www.alloschool.com/course/francais-6eme-annee-primaire"
     },
     {
       "id": "cours-francais-3eme-annee-primaire",
       "title": "Français: 3ème Année Primaire",
-      "title_ar": "",
       "level_id": "primaire-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-3eme-annee-primaire",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-primaire-3",
+      "url": "https://www.alloschool.com/course/francais-3eme-annee-primaire"
     },
     {
       "id": "cours-francais-5eme-annee-primaire",
       "title": "Français: 5ème Année Primaire",
-      "title_ar": "",
       "level_id": "primaire-5",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-5eme-annee-primaire",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-primaire-5",
+      "url": "https://www.alloschool.com/course/francais-5eme-annee-primaire"
     },
     {
       "id": "cours-francais-4eme-annee-primaire",
       "title": "Français: 4ème Année Primaire",
-      "title_ar": "",
       "level_id": "primaire-4",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-4eme-annee-primaire",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-primaire-4",
+      "url": "https://www.alloschool.com/course/francais-4eme-annee-primaire"
     },
     {
       "id": "cours-physique-et-chimie-1ere-annee-college",
       "title": "Physique et Chimie 1ère Année Collège",
-      "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-1ere-annee-college",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-college-1",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-1ere-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
       "title": "Sciences de la Vie et de la Terre (SVT) 1ère Année Collège",
-      "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "sciences-college-1",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
       "title": "Sciences de la Vie et de la Terre (SVT) 2ème Année Collège",
-      "title_ar": "",
       "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "sciences-college-2",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-annee-college",
       "title": "Physique et Chimie 2ème Année Collège",
-      "title_ar": "",
       "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-annee-college",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-college-2",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
       "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Mathématiques A BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
       "id": "cours-physique-et-chimie-tronc-commun-sciences-biof",
       "title": "Physique et Chimie Tronc commun Sciences BIOF",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-sciences-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-tc",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-sciences-biof"
     },
     {
       "id": "cours-mathematiques-tronc-commun-sciences-biof",
       "title": "Mathématiques Tronc commun Sciences BIOF",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-sciences-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-tc",
+      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-sciences-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-a-biof",
       "title": "Mathématiques 2ème BAC Sciences Mathématiques A BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-b-biof",
       "title": "Mathématiques 2ème BAC Sciences Mathématiques B BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-physiques-biof",
       "title": "Mathématiques 2ème BAC Sciences Physiques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-physiques-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
       "title": "Sciences de la Vie et de la Terre (SVT) Tronc commun Sciences",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "sciences-lycee-tc",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
       "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Physiques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
       "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences de la Vie et de la Terre BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
       "title": "Mathématiques 2ème BAC Sciences de la Vie et de la Terre BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-agronomiques-biof",
       "title": "Mathématiques 2ème BAC Sciences Agronomiques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
       "title": "Mathématiques 2ème BAC Sciences et Technologies Électriques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
       "title": "Mathématiques 2ème BAC Sciences et Technologies Mécaniques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof"
     },
     {
       "id": "cours-physique-et-chimie-tronc-commun-technologique-biof",
       "title": "Physique et Chimie Tronc commun Technologique BIOF",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-technologique-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-tc",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-technologique-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
       "title": "Physique et Chimie 2ème BAC Sciences Mathématiques A BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof",
       "title": "Physique et Chimie 2ème BAC Sciences Mathématiques B BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "mathematiques-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-physiques-biof",
       "title": "Physique et Chimie 2ème BAC Sciences Physiques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-physiques-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-mathematiques-tronc-commun-technologique-biof",
       "title": "Mathématiques Tronc commun Technologique BIOF",
-      "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-technologique-biof",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-lycee-tc",
+      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-technologique-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
       "title": "Physique et Chimie 2ème BAC Sciences de la Vie et de la Terre BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-agronomiques-biof",
       "title": "Physique et Chimie 2ème BAC Sciences Agronomiques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-agronomiques-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-agronomiques-biof"
     },
     {
       "id": "cours-mathematiques-2eme-annee-college",
       "title": "Mathématiques 2ème Année Collège",
-      "title_ar": "",
       "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-annee-college",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-college-2",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
       "title": "Physique et Chimie 2ème BAC Sciences et Technologies Mécaniques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof"
     },
     {
       "id": "cours-mathematiques-1ere-annee-college",
       "title": "Mathématiques 1ère Année Collège",
-      "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-1ere-annee-college",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-college-1",
+      "url": "https://www.alloschool.com/course/mathematiques-1ere-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
       "title": "Physique et Chimie 2ème BAC Sciences et Technologies Electriques BIOF",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-lycee-2bac",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
       "title": "Sciences de la Vie et de la Terre (SVT) 3ème Année Collège",
-      "title_ar": "",
       "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
+      "subject_id": "sciences-college-3",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-3eme-annee-college",
       "title": "Physique et Chimie 3ème Année Collège",
-      "title_ar": "",
       "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-3eme-annee-college",
-      "subject_id": "physique-et-chimie"
+      "subject_id": "sciences-college-3",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-3eme-annee-college"
     },
     {
       "id": "cours-anglais-2eme-bac-lettres",
       "title": "Anglais: 2ème BAC Lettres",
-      "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-lettres",
-      "subject_id": "anglais"
-    },
-    {
-      "id": "cours-anglais-2eme-bac-sciences-humaines",
-      "title": "Anglais: 2ème BAC Sciences Humaines",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-humaines",
-      "subject_id": "anglais"
+      "subject_id": "anglais-lycee-2bac",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-lettres"
     },
     {
       "id": "cours-francais-1ere-annee-primaire",
       "title": "Français: 1ère Année Primaire",
-      "title_ar": "",
       "level_id": "primaire-1",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-1ere-annee-primaire",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-primaire-1",
+      "url": "https://www.alloschool.com/course/francais-1ere-annee-primaire"
     },
     {
       "id": "cours-mathematiques-3eme-annee-college",
       "title": "Mathématiques 3ème Année Collège",
-      "title_ar": "",
       "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-3eme-annee-college",
-      "subject_id": "mathematiques"
+      "subject_id": "mathematiques-college-3",
+      "url": "https://www.alloschool.com/course/mathematiques-3eme-annee-college"
     },
     {
       "id": "cours-francais-2eme-annee-primaire",
       "title": "Français: 2ème Année Primaire",
-      "title_ar": "",
       "level_id": "primaire-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-annee-primaire",
-      "subject_id": "fran-ais"
+      "subject_id": "francais-primaire-2",
+      "url": "https://www.alloschool.com/course/francais-2eme-annee-primaire"
     }
-  ]
+  ],
+  "cleaning_stats": {
+    "original_content": 93,
+    "cleaned_content": 89,
+    "broken_links_removed": 0,
+    "unnecessary_items_removed": 4
+  },
+  "broken_links": []
 }
