@@ -3,7 +3,7 @@
   "base_url": "https://www.alloschool.com",
   "statistics": {
     "total_levels": 11,
-    "total_subjects": 42,
+    "total_subjects": 13,
     "total_content": 93
   },
   "levels": [
@@ -96,7 +96,8 @@
         "college-3",
         "lycee-2bac",
         "lycee-tc"
-      ]
+      ],
+      "content_count": 17
     },
     {
       "id": "comptabilite-et-mathematiques-financieres",
@@ -104,7 +105,8 @@
       "name_ar": "",
       "levels": [
         "lycee-2bac"
-      ]
+      ],
+      "content_count": 2
     },
     {
       "id": "droit",
@@ -112,7 +114,8 @@
       "name_ar": "",
       "levels": [
         "lycee-2bac"
-      ]
+      ],
+      "content_count": 2
     },
     {
       "id": "fran-ais",
@@ -130,7 +133,8 @@
         "primaire-4",
         "primaire-5",
         "primaire-6"
-      ]
+      ],
+      "content_count": 23
     },
     {
       "id": "informatique",
@@ -141,7 +145,8 @@
         "college-2",
         "college-3",
         "lycee-tc"
-      ]
+      ],
+      "content_count": 5
     },
     {
       "id": "informatique-de-gestion",
@@ -149,207 +154,34 @@
       "name_ar": "",
       "levels": [
         "lycee-2bac"
-      ]
+      ],
+      "content_count": 2
     },
     {
       "id": "mathematiques",
       "name": "Mathématiques",
       "name_ar": "",
       "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-1ere-annee-college",
-      "name": "Mathématiques 1ère Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-1"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-annee-college",
-      "name": "Mathématiques 2ème Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-2"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-agronomiques-biof",
-      "name": "Mathématiques 2ème BAC Sciences Agronomiques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-mathematiques-a-biof",
-      "name": "Mathématiques 2ème BAC Sciences Mathématiques A BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-mathematiques-b-biof",
-      "name": "Mathématiques 2ème BAC Sciences Mathématiques B BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-physiques-biof",
-      "name": "Mathématiques 2ème BAC Sciences Physiques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "name": "Mathématiques 2ème BAC Sciences de la Vie et de la Terre BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "name": "Mathématiques 2ème BAC Sciences et Technologies Mécaniques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
-      "name": "Mathématiques 2ème BAC Sciences et Technologies Électriques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "mathematiques-3eme-annee-college",
-      "name": "Mathématiques 3ème Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-3"
-      ]
-    },
-    {
-      "id": "mathematiques-tronc-commun-sciences-biof",
-      "name": "Mathématiques Tronc commun Sciences BIOF",
-      "name_ar": "",
-      "levels": [
+        "college-1",
+        "college-2",
+        "college-3",
+        "lycee-2bac",
         "lycee-tc"
-      ]
+      ],
+      "content_count": 14
     },
     {
-      "id": "mathematiques-tronc-commun-technologique-biof",
-      "name": "Mathématiques Tronc commun Technologique BIOF",
+      "id": "physique-et-chimie",
+      "name": "Physique et Chimie",
       "name_ar": "",
       "levels": [
+        "college-1",
+        "college-2",
+        "college-3",
+        "lycee-2bac",
         "lycee-tc"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-1ere-annee-college",
-      "name": "Physique et Chimie 1ère Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-1"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-annee-college",
-      "name": "Physique et Chimie 2ème Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-2"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-agronomiques-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences Agronomiques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences Mathématiques A BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences Mathématiques B BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-physiques-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences Physiques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences de la Vie et de la Terre BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences et Technologies Electriques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "name": "Physique et Chimie 2ème BAC Sciences et Technologies Mécaniques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-3eme-annee-college",
-      "name": "Physique et Chimie 3ème Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-3"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-tronc-commun-sciences-biof",
-      "name": "Physique et Chimie Tronc commun Sciences BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-tc"
-      ]
-    },
-    {
-      "id": "physique-et-chimie-tronc-commun-technologique-biof",
-      "name": "Physique et Chimie Tronc commun Technologique BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-tc"
-      ]
+      ],
+      "content_count": 12
     },
     {
       "id": "sciences-vegetales-et-animales",
@@ -357,7 +189,8 @@
       "name_ar": "",
       "levels": [
         "lycee-2bac"
-      ]
+      ],
+      "content_count": 1
     },
     {
       "id": "sciences-de-l-ingenieur",
@@ -366,63 +199,21 @@
       "levels": [
         "lycee-2bac",
         "lycee-tc"
-      ]
+      ],
+      "content_count": 4
     },
     {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
-      "name": "Sciences de la Vie et de la Terre (SVT) 1ère Année Collège",
+      "id": "sciences-de-la-vie-et-de-la-terre-svt",
+      "name": "Sciences de la Vie et de la Terre (SVT)",
       "name_ar": "",
       "levels": [
-        "college-1"
-      ]
-    },
-    {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
-      "name": "Sciences de la Vie et de la Terre (SVT) 2ème Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-2"
-      ]
-    },
-    {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
-      "name": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Mathématiques A BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
-      "name": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Physiques BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "name": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences de la Vie et de la Terre BIOF",
-      "name_ar": "",
-      "levels": [
-        "lycee-2bac"
-      ]
-    },
-    {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
-      "name": "Sciences de la Vie et de la Terre (SVT) 3ème Année Collège",
-      "name_ar": "",
-      "levels": [
-        "college-3"
-      ]
-    },
-    {
-      "id": "sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
-      "name": "Sciences de la Vie et de la Terre (SVT) Tronc commun Sciences",
-      "name_ar": "",
-      "levels": [
+        "college-1",
+        "college-2",
+        "college-3",
+        "lycee-2bac",
         "lycee-tc"
-      ]
+      ],
+      "content_count": 7
     },
     {
       "id": "economie-et-organisation-administrative-des-entreprises",
@@ -430,7 +221,8 @@
       "name_ar": "",
       "levels": [
         "lycee-2bac"
-      ]
+      ],
+      "content_count": 2
     },
     {
       "id": "economie-generale-et-statistiques",
@@ -438,7 +230,8 @@
       "name_ar": "",
       "levels": [
         "lycee-2bac"
-      ]
+      ],
+      "content_count": 2
     }
   ],
   "content": [
@@ -971,7 +764,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-1ere-annee-college",
-      "subject_id": "physique-et-chimie-1ere-annee-college"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
@@ -980,7 +773,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
@@ -989,7 +782,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-physique-et-chimie-2eme-annee-college",
@@ -998,7 +791,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-annee-college",
-      "subject_id": "physique-et-chimie-2eme-annee-college"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
@@ -1007,7 +800,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-physique-et-chimie-tronc-commun-sciences-biof",
@@ -1016,7 +809,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-sciences-biof",
-      "subject_id": "physique-et-chimie-tronc-commun-sciences-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-mathematiques-tronc-commun-sciences-biof",
@@ -1025,7 +818,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-sciences-biof",
-      "subject_id": "mathematiques-tronc-commun-sciences-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-a-biof",
@@ -1034,7 +827,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-mathematiques-a-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-b-biof",
@@ -1043,7 +836,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-mathematiques-b-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-physiques-biof",
@@ -1052,7 +845,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-physiques-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-physiques-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
@@ -1061,7 +854,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
@@ -1070,7 +863,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -1079,7 +872,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -1088,7 +881,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-agronomiques-biof",
@@ -1097,7 +890,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-agronomiques-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
@@ -1106,7 +899,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-et-technologies-electriques-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
@@ -1115,7 +908,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "subject_id": "mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-physique-et-chimie-tronc-commun-technologique-biof",
@@ -1124,7 +917,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-technologique-biof",
-      "subject_id": "physique-et-chimie-tronc-commun-technologique-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
@@ -1133,7 +926,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof",
@@ -1142,7 +935,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-physiques-biof",
@@ -1151,7 +944,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-physiques-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-physiques-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-mathematiques-tronc-commun-technologique-biof",
@@ -1160,7 +953,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-technologique-biof",
-      "subject_id": "mathematiques-tronc-commun-technologique-biof"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -1169,7 +962,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-agronomiques-biof",
@@ -1178,7 +971,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-agronomiques-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-agronomiques-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-mathematiques-2eme-annee-college",
@@ -1187,7 +980,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-2eme-annee-college",
-      "subject_id": "mathematiques-2eme-annee-college"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
@@ -1196,7 +989,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-mathematiques-1ere-annee-college",
@@ -1205,7 +998,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-1ere-annee-college",
-      "subject_id": "mathematiques-1ere-annee-college"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
@@ -1214,7 +1007,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
-      "subject_id": "physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
@@ -1223,7 +1016,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
-      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college"
+      "subject_id": "sciences-de-la-vie-et-de-la-terre-svt"
     },
     {
       "id": "cours-physique-et-chimie-3eme-annee-college",
@@ -1232,7 +1025,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/physique-et-chimie-3eme-annee-college",
-      "subject_id": "physique-et-chimie-3eme-annee-college"
+      "subject_id": "physique-et-chimie"
     },
     {
       "id": "cours-anglais-2eme-bac-lettres",
@@ -1268,7 +1061,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-3eme-annee-college",
-      "subject_id": "mathematiques-3eme-annee-college"
+      "subject_id": "mathematiques"
     },
     {
       "id": "cours-francais-2eme-annee-primaire",
