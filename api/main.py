@@ -49,8 +49,9 @@ def load_data():
         return {
             "levels": [],
             "subjects": [],
+            "content": [],
             "courses": [],
-            "metadata": {}
+            "statistics": {}
         }
 
 # Load data on startup
@@ -74,13 +75,13 @@ async def root():
         "status": "operational",
         "data_source": "Public Moroccan Education Websites",
         "last_update": education_data.get("collection_date", "N/A"),
-        "total_items": education_data.get("metadata", {}).get("total_items", 0),
+        "total_items": education_data.get("statistics", {}).get("total_content", len(education_data.get("content", []))),
         "made_by": "Moroccan Developers Community",
         "github": {
-            "repository": "https://github.com/K11E3R/moroccan-education-API",
-            "issues": "https://github.com/K11E3R/moroccan-education-API/issues",
-            "contribute": "https://github.com/K11E3R/moroccan-education-API#contributing"
+            "issues": "https://github.com/K11E3R/moroccan-education-API/issues (private)",
+            "contribute": "https://github.com/K11E3R/moroccan-education-API#contributing (private)",
         },
+        "email": "prs.online.00@gmail.com",
         "support": {
             "report_issue": "https://github.com/K11E3R/moroccan-education-API/issues/new",
             "contribute": "Fork the repo and submit a PR",
@@ -175,7 +176,7 @@ async def get_courses(
     
     Returns: List of courses, exercises, exams, etc.
     """
-    courses = education_data.get("courses", [])
+    courses = education_data.get("content", education_data.get("courses", []))
     
     # Filter by level
     if level_id:
@@ -232,7 +233,7 @@ async def search(
     
     # Search courses
     if not type or type in ["courses", "all"]:
-        for course in education_data.get("courses", []):
+        for course in education_data.get("content", education_data.get("courses", [])):
             title_field = "title" if language == "fr" else "title_ar"
             if q_lower in course.get(title_field, "").lower():
                 results["courses"].append(course)
@@ -253,20 +254,20 @@ async def get_stats():
     
     Returns: Collection stats, data quality, and availability
     """
-    metadata = education_data.get("metadata", {})
+    stats = education_data.get("statistics", {})
+    levels_count = len(education_data.get("levels", []))
+    subjects_count = len(education_data.get("subjects", []))
+    courses_count = len(education_data.get("content", []))
     
     return {
         "success": True,
         "data": {
-            "total_items": metadata.get("total_items", 0),
-            "levels_count": metadata.get("levels_count", 0),
-            "subjects_count": metadata.get("subjects_count", 0),
-            "courses_count": metadata.get("courses_count", 0),
-            "exercises_count": metadata.get("exercises_count", 0),
-            "controls_count": metadata.get("controls_count", 0),
-            "exams_count": metadata.get("exams_count", 0),
-            "languages": metadata.get("languages", ["fr", "ar"]),
-            "quality_score": metadata.get("quality_score", 0),
+            "total_items": stats.get("total_content", courses_count),
+            "levels_count": stats.get("total_levels", levels_count),
+            "subjects_count": stats.get("total_subjects", subjects_count),
+            "courses_count": stats.get("total_content", courses_count),
+            "content_count": stats.get("total_content", courses_count),
+            "languages": ["fr", "ar"],
             "last_update": education_data.get("collection_date", "N/A"),
             "data_source": "Public Moroccan Education Websites",
             "api_version": "1.0.0",
