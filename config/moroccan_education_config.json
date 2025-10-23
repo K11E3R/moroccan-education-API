@@ -1,0 +1,223 @@
+{
+  "collection_config": {
+    "base_url": "https://www.alloschool.com",
+    "source_name": "public_website",
+    "country": "morocco",
+    "respect_robots": true,
+    "delay_between_requests": 2.0,
+    "max_concurrent_requests": 3,
+    "timeout": 30,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  },
+  "sitemap_urls": [
+    "https://www.alloschool.com/sitemap.xml",
+    "https://www.alloschool.com/sitemap_index.xml"
+  ],
+  "content_selectors": {
+    "title": "h1, .title, .page-title, .content-title",
+    "description": ".description, .content, .summary, .excerpt",
+    "level": ".level, .niveau, .grade, .class",
+    "subject": ".subject, .matiere, .discipline, .course",
+    "breadcrumb": ".breadcrumb, .navigation, .path",
+    "content_body": ".content-body, .main-content, .article-content"
+  },
+  "url_patterns": {
+    "levels": [
+      "/category/primaire",
+      "/category/college", 
+      "/category/lycee",
+      "/category/bac",
+      "/category/superieur"
+    ],
+    "subjects": [
+      "/category/mathematiques",
+      "/category/francais",
+      "/category/arabe",
+      "/category/sciences",
+      "/category/histoire",
+      "/category/geographie",
+      "/category/anglais",
+      "/category/physique",
+      "/category/chimie",
+      "/category/svt",
+      "/category/islamique",
+      "/category/informatique"
+    ],
+    "courses": [
+      "/cours/",
+      "/lesson/",
+      "/lecon/"
+    ],
+    "exercises": [
+      "/exercice/",
+      "/exercise/",
+      "/pratique/"
+    ],
+    "controls": [
+      "/controle/",
+      "/control/",
+      "/test/"
+    ],
+    "exams": [
+      "/examen/",
+      "/exam/",
+      "/evaluation/"
+    ],
+    "corrections": [
+      "/correction/",
+      "/solution/",
+      "/reponse/"
+    ]
+  },
+  "data_extraction_rules": {
+    "level_extraction": {
+      "name_patterns": [
+        "primaire|primary",
+        "college|middle",
+        "lycee|lycée|high",
+        "bac|baccalauréat",
+        "superieur|superior|university"
+      ],
+      "arabic_names": {
+        "primaire": "الابتدائي",
+        "college": "الإعدادي", 
+        "lycee": "الثانوي",
+        "bac": "البكالوريا",
+        "superieur": "العالي"
+      }
+    },
+    "subject_extraction": {
+      "name_patterns": [
+        "math|mathematiques",
+        "francais|français",
+        "arabe",
+        "sciences",
+        "histoire",
+        "geographie",
+        "anglais",
+        "physique",
+        "chimie",
+        "svt",
+        "islamique",
+        "informatique"
+      ],
+      "arabic_names": {
+        "math": "الرياضيات",
+        "francais": "الفرنسية",
+        "arabe": "العربية",
+        "sciences": "العلوم",
+        "histoire": "التاريخ",
+        "geographie": "الجغرافيا",
+        "anglais": "الإنجليزية",
+        "physique": "الفيزياء",
+        "chimie": "الكيمياء",
+        "svt": "علوم الحياة والأرض",
+        "islamique": "التربية الإسلامية",
+        "informatique": "المعلوماتية"
+      },
+      "colors": {
+        "math": "#3b82f6",
+        "francais": "#ef4444",
+        "arabe": "#10b981",
+        "sciences": "#f59e0b",
+        "histoire": "#8b5cf6",
+        "geographie": "#06b6d4",
+        "anglais": "#8b5cf6",
+        "physique": "#f59e0b",
+        "chimie": "#10b981",
+        "svt": "#059669",
+        "islamique": "#059669",
+        "informatique": "#6366f1"
+      },
+      "icons": {
+        "math": "Calculator",
+        "francais": "BookOpen",
+        "arabe": "Book",
+        "sciences": "Microscope",
+        "histoire": "Clock",
+        "geographie": "Globe",
+        "anglais": "Globe",
+        "physique": "Atom",
+        "chimie": "FlaskConical",
+        "svt": "Leaf",
+        "islamique": "BookOpen",
+        "informatique": "Monitor"
+      }
+    },
+    "content_extraction": {
+      "title_selectors": [
+        "h1",
+        ".title",
+        ".page-title",
+        ".content-title",
+        ".lesson-title"
+      ],
+      "description_selectors": [
+        ".description",
+        ".content",
+        ".summary",
+        ".excerpt",
+        "meta[name='description']"
+      ],
+      "content_type_mapping": {
+        "cours": "course",
+        "lesson": "course",
+        "lecon": "course",
+        "exercice": "exercise",
+        "exercise": "exercise",
+        "pratique": "exercise",
+        "controle": "control",
+        "control": "control",
+        "test": "control",
+        "examen": "exam",
+        "exam": "exam",
+        "evaluation": "exam",
+        "correction": "correction",
+        "solution": "correction",
+        "reponse": "correction"
+      }
+    }
+  },
+  "quality_checks": {
+    "required_fields": {
+      "level": ["id", "name", "name_ar", "subjects_count", "courses_count"],
+      "subject": ["id", "name", "name_ar", "level_id", "courses_count"],
+      "content": ["id", "title", "content_type", "subject_id", "level_id"]
+    },
+    "validation_rules": {
+      "min_subjects_per_level": 3,
+      "min_courses_per_subject": 1,
+      "max_empty_descriptions": 0.3,
+      "min_confidence_score": 0.7
+    }
+  },
+  "output_format": {
+    "json_structure": {
+      "source": "public_website",
+      "country": "morocco",
+      "collection_date": "ISO_timestamp",
+      "levels": [],
+      "subjects": [],
+      "courses": [],
+      "exercises": [],
+      "controls": [],
+      "exams": [],
+      "corrections": [],
+      "metadata": {
+        "total_items": "number",
+        "languages": ["fr", "ar"],
+        "quality_score": "float",
+        "collection_stats": {}
+      }
+    },
+    "csv_exports": [
+      "levels.csv",
+      "subjects.csv", 
+      "courses.csv",
+      "exercises.csv",
+      "controls.csv",
+      "exams.csv",
+      "corrections.csv"
+    ]
+  }
+}
