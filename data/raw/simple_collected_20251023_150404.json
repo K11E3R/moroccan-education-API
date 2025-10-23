@@ -1,5 +1,5 @@
 {
-  "collection_date": "2025-10-23T15:10:13.285759",
+  "collection_date": "2025-10-23T15:04:04.406923",
   "base_url": "https://www.alloschool.com",
   "statistics": {
     "total_levels": 11,
@@ -96,6 +96,14 @@
       "url": "https://www.alloschool.com/course/francais-tronc-commun-sciences"
     },
     {
+      "id": "cours-anglais-tronc-commun-lettres-et-sciences-humaines",
+      "title": "Anglais: Tronc commun Lettres et Sciences Humaines",
+      "title_ar": "",
+      "level_id": "lycee-tc",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-tronc-commun-lettres-et-sciences-humaines"
+    },
+    {
       "id": "cours-informatique-tronc-commun-sciences",
       "title": "Informatique: Tronc Commun Sciences",
       "title_ar": "",
@@ -112,28 +120,12 @@
       "url": "https://www.alloschool.com/course/francais-tronc-commun-technologique"
     },
     {
-      "id": "cours-anglais-tronc-commun-lettres-et-sciences-humaines",
-      "title": "Anglais: Tronc commun Lettres et Sciences Humaines",
-      "title_ar": "",
-      "level_id": "lycee-tc",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-tronc-commun-lettres-et-sciences-humaines"
-    },
-    {
       "id": "cours-sciences-de-l-ingenieur-tronc-commun-technologique",
       "title": "Sciences de l'ingénieur: Tronc commun Technologique",
       "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-tronc-commun-technologique"
-    },
-    {
-      "id": "cours-informatique-tronc-commun-technologique",
-      "title": "Informatique: Tronc Commun Technologique",
-      "title_ar": "",
-      "level_id": "lycee-tc",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-tronc-commun-technologique"
     },
     {
       "id": "cours-anglais-tronc-commun-technologique",
@@ -144,12 +136,12 @@
       "url": "https://www.alloschool.com/course/anglais-tronc-commun-technologique"
     },
     {
-      "id": "cours-francais-tronc-commun-lettres-et-sciences-humaines",
-      "title": "Français: Tronc commun Lettres et Sciences Humaines",
+      "id": "cours-informatique-tronc-commun-technologique",
+      "title": "Informatique: Tronc Commun Technologique",
       "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-tronc-commun-lettres-et-sciences-humaines"
+      "url": "https://www.alloschool.com/course/informatique-tronc-commun-technologique"
     },
     {
       "id": "cours-anglais-tronc-commun-sciences",
@@ -160,20 +152,12 @@
       "url": "https://www.alloschool.com/course/anglais-tronc-commun-sciences"
     },
     {
-      "id": "cours-francais-2eme-bac-sciences-mathematiques-b",
-      "title": "Français: 2eme BAC Sciences Mathématiques B",
+      "id": "cours-francais-tronc-commun-lettres-et-sciences-humaines",
+      "title": "Français: Tronc commun Lettres et Sciences Humaines",
       "title_ar": "",
-      "level_id": "lycee-2bac",
+      "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-b"
-    },
-    {
-      "id": "cours-francais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
-      "title": "Français: 2eme BAC Sciences de la Vie et de la Terre",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
+      "url": "https://www.alloschool.com/course/francais-tronc-commun-lettres-et-sciences-humaines"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-mathematiques-a",
@@ -184,12 +168,28 @@
       "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-a"
     },
     {
+      "id": "cours-francais-2eme-bac-sciences-mathematiques-b",
+      "title": "Français: 2eme BAC Sciences Mathématiques B",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-b"
+    },
+    {
       "id": "cours-francais-2eme-bac-sciences-physiques",
       "title": "Français: 2eme BAC Sciences Physiques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-physiques"
+    },
+    {
+      "id": "cours-francais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
+      "title": "Français: 2eme BAC Sciences de la Vie et de la Terre",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b",
@@ -208,6 +208,14 @@
       "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-b"
     },
     {
+      "id": "cours-anglais-2eme-bac-sciences-physiques",
+      "title": "Anglais: 2ème BAC Sciences Physiques",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-physiques"
+    },
+    {
       "id": "cours-anglais-2eme-bac-sciences-mathematiques-a",
       "title": "Anglais : 2ème BAC Sciences Mathématiques A",
       "title_ar": "",
@@ -224,12 +232,12 @@
       "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
     },
     {
-      "id": "cours-anglais-2eme-bac-sciences-physiques",
-      "title": "Anglais: 2ème BAC Sciences Physiques",
+      "id": "cours-francais-2eme-bac-sciences-agronomiques",
+      "title": "Français: 2eme BAC Sciences Agronomiques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-physiques"
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-et-technologies-mecaniques",
@@ -240,60 +248,12 @@
       "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
-      "id": "cours-francais-2eme-bac-sciences-et-technologies-electriques",
-      "title": "Français: 2eme BAC Sciences et Technologies Electriques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-electriques"
-    },
-    {
-      "id": "cours-francais-2eme-bac-sciences-agronomiques",
-      "title": "Français: 2eme BAC Sciences Agronomiques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-agronomiques"
-    },
-    {
-      "id": "cours-sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques",
-      "title": "Sciences Végétales et Animales: 2eme BAC Sciences Agronomiques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques"
-    },
-    {
-      "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques",
-      "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Mécaniques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques"
-    },
-    {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques",
       "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Electriques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques"
-    },
-    {
-      "id": "cours-anglais-2eme-bac-sciences-et-technologies-mecaniques",
-      "title": "Anglais: 2ème BAC Sciences et Technologies Mécaniques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-mecaniques"
-    },
-    {
-      "id": "cours-anglais-2eme-bac-sciences-agronomiques",
-      "title": "Anglais: 2ème BAC Sciences Agronomiques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-et-technologies-electriques",
@@ -304,28 +264,52 @@
       "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-electriques"
     },
     {
+      "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques",
+      "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Mécaniques",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques"
+    },
+    {
+      "id": "cours-sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques",
+      "title": "Sciences Végétales et Animales: 2eme BAC Sciences Agronomiques",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques"
+    },
+    {
+      "id": "cours-anglais-2eme-bac-sciences-agronomiques",
+      "title": "Anglais: 2ème BAC Sciences Agronomiques",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-agronomiques"
+    },
+    {
+      "id": "cours-anglais-2eme-bac-sciences-et-technologies-mecaniques",
+      "title": "Anglais: 2ème BAC Sciences et Technologies Mécaniques",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-mecaniques"
+    },
+    {
+      "id": "cours-francais-2eme-bac-sciences-et-technologies-electriques",
+      "title": "Français: 2eme BAC Sciences et Technologies Electriques",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-electriques"
+    },
+    {
       "id": "cours-informatique-de-gestion-2eme-bac-sciences-economiques",
       "title": "Informatique de gestion: 2eme BAC Sciences Economiques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-economiques"
-    },
-    {
-      "id": "cours-francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc",
-      "title": "Français: 2eme BAC Sciences Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc"
-    },
-    {
-      "id": "cours-informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "title": "Informatique de gestion: 2eme BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-droit-2eme-bac-sciences-de-gestion-comptable-sgc",
@@ -336,20 +320,28 @@
       "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
-      "id": "cours-francais-2eme-bac-sciences-humaines",
-      "title": "Français: 2eme BAC Sciences Humaines",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-humaines"
-    },
-    {
       "id": "cours-francais-2eme-bac-lettres",
       "title": "Français: 2eme BAC Lettres",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/francais-2eme-bac-lettres"
+    },
+    {
+      "id": "cours-informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc",
+      "title": "Informatique de gestion: 2eme BAC Sciences de Gestion Comptable (SGC)",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc"
+    },
+    {
+      "id": "cours-francais-2eme-bac-sciences-humaines",
+      "title": "Français: 2eme BAC Sciences Humaines",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-humaines"
     },
     {
       "id": "cours-economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc",
@@ -360,28 +352,20 @@
       "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
+      "id": "cours-francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc",
+      "title": "Français: 2eme BAC Sciences Sciences de Gestion Comptable (SGC)",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc"
+    },
+    {
       "id": "cours-economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Économie générale et Statistiques : 2ème BAC Sciences de Gestion Comptable (SGC)",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc"
-    },
-    {
-      "id": "cours-anglais-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "title": "Anglais: 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-gestion-comptable-sgc"
-    },
-    {
-      "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "title": "Comptabilité et Mathématiques financières : 2ème BAC Sciences de Gestion Comptable (SGC)",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-economiques",
@@ -400,12 +384,12 @@
       "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-economiques"
     },
     {
-      "id": "cours-mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc",
-      "title": "Mathématiques : 2ème BAC Sciences de Gestion Comptable (SGC)",
+      "id": "cours-droit-2eme-bac-sciences-economiques",
+      "title": "Droit: 2ème BAC Sciences Économiques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques",
@@ -416,12 +400,12 @@
       "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques"
     },
     {
-      "id": "cours-droit-2eme-bac-sciences-economiques",
-      "title": "Droit: 2ème BAC Sciences Économiques",
+      "id": "cours-anglais-2eme-bac-sciences-economiques",
+      "title": "Anglais: 2ème BAC Sciences Économiques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-economiques"
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques",
@@ -432,20 +416,36 @@
       "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques"
     },
     {
-      "id": "cours-anglais-2eme-bac-sciences-economiques",
-      "title": "Anglais: 2ème BAC Sciences Économiques",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-economiques"
-    },
-    {
       "id": "cours-economie-generale-et-statistiques-2eme-bac-sciences-economiques",
       "title": "Économie générale et Statistiques : 2ème BAC Sciences Économiques",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-economiques"
+    },
+    {
+      "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc",
+      "title": "Comptabilité et Mathématiques financières : 2ème BAC Sciences de Gestion Comptable (SGC)",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc"
+    },
+    {
+      "id": "cours-mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc",
+      "title": "Mathématiques : 2ème BAC Sciences de Gestion Comptable (SGC)",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc"
+    },
+    {
+      "id": "cours-anglais-2eme-bac-sciences-de-gestion-comptable-sgc",
+      "title": "Anglais: 2ème BAC Sciences de Gestion Comptable (SGC)",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-francais-2eme-annee-college",
@@ -464,14 +464,6 @@
       "url": "https://www.alloschool.com/course/francais-1ere-annee-college"
     },
     {
-      "id": "cours-informatique-2eme-annee-college",
-      "title": "Informatique: 2ème Année Collège",
-      "title_ar": "",
-      "level_id": "college-2",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-2eme-annee-college"
-    },
-    {
       "id": "cours-informatique-1ere-annee-college",
       "title": "Informatique: 1ère Année Collège",
       "title_ar": "",
@@ -480,12 +472,12 @@
       "url": "https://www.alloschool.com/course/informatique-1ere-annee-college"
     },
     {
-      "id": "cours-informatique-3eme-annee-college",
-      "title": "Informatique: 3ème Année Collège",
+      "id": "cours-informatique-2eme-annee-college",
+      "title": "Informatique: 2ème Année Collège",
       "title_ar": "",
-      "level_id": "college-3",
+      "level_id": "college-2",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/informatique-3eme-annee-college"
+      "url": "https://www.alloschool.com/course/informatique-2eme-annee-college"
     },
     {
       "id": "cours-francais-3eme-annee-college",
@@ -496,12 +488,12 @@
       "url": "https://www.alloschool.com/course/francais-3eme-annee-college"
     },
     {
-      "id": "cours-anglais-2eme-annee-college",
-      "title": "Anglais: 2ème Année Collège",
+      "id": "cours-informatique-3eme-annee-college",
+      "title": "Informatique: 3ème Année Collège",
       "title_ar": "",
-      "level_id": "college-2",
+      "level_id": "college-3",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-annee-college"
+      "url": "https://www.alloschool.com/course/informatique-3eme-annee-college"
     },
     {
       "id": "cours-anglais-1ere-annee-college",
@@ -510,6 +502,14 @@
       "level_id": "college-1",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/anglais-1ere-annee-college"
+    },
+    {
+      "id": "cours-anglais-2eme-annee-college",
+      "title": "Anglais: 2ème Année Collège",
+      "title_ar": "",
+      "level_id": "college-2",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-2eme-annee-college"
     },
     {
       "id": "cours-anglais-3eme-annee-college",
@@ -552,20 +552,20 @@
       "url": "https://www.alloschool.com/course/francais-4eme-annee-primaire"
     },
     {
-      "id": "cours-physique-et-chimie-1ere-annee-college",
-      "title": "Physique et Chimie 1ère Année Collège",
-      "title_ar": "",
-      "level_id": "college-1",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-1ere-annee-college"
-    },
-    {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
       "title": "Sciences de la Vie et de la Terre (SVT) 1ère Année Collège",
       "title_ar": "",
       "level_id": "college-1",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college"
+    },
+    {
+      "id": "cours-physique-et-chimie-1ere-annee-college",
+      "title": "Physique et Chimie 1ère Année Collège",
+      "title_ar": "",
+      "level_id": "college-1",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-1ere-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
@@ -584,52 +584,12 @@
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-annee-college"
     },
     {
-      "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
-      "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Mathématiques A BIOF",
+      "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
+      "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Physiques BIOF",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof"
-    },
-    {
-      "id": "cours-physique-et-chimie-tronc-commun-sciences-biof",
-      "title": "Physique et Chimie Tronc commun Sciences BIOF",
-      "title_ar": "",
-      "level_id": "lycee-tc",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-sciences-biof"
-    },
-    {
-      "id": "cours-mathematiques-tronc-commun-sciences-biof",
-      "title": "Mathématiques Tronc commun Sciences BIOF",
-      "title_ar": "",
-      "level_id": "lycee-tc",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-sciences-biof"
-    },
-    {
-      "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-a-biof",
-      "title": "Mathématiques 2ème BAC Sciences Mathématiques A BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof"
-    },
-    {
-      "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-b-biof",
-      "title": "Mathématiques 2ème BAC Sciences Mathématiques B BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof"
-    },
-    {
-      "id": "cours-mathematiques-2eme-bac-sciences-physiques-biof",
-      "title": "Mathématiques 2ème BAC Sciences Physiques BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-physiques-biof"
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
@@ -640,12 +600,28 @@
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences"
     },
     {
-      "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
-      "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Physiques BIOF",
+      "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
+      "title": "Mathématiques 2ème BAC Sciences et Technologies Mécaniques BIOF",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof"
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof"
+    },
+    {
+      "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
+      "title": "Sciences de la Vie et de la Terre (SVT) 2ème BAC Sciences Mathématiques A BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof"
+    },
+    {
+      "id": "cours-physique-et-chimie-tronc-commun-technologique-biof",
+      "title": "Physique et Chimie Tronc commun Technologique BIOF",
+      "title_ar": "",
+      "level_id": "lycee-tc",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-technologique-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -656,44 +632,20 @@
       "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
-      "id": "cours-mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
-      "title": "Mathématiques 2ème BAC Sciences de la Vie et de la Terre BIOF",
+      "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-a-biof",
+      "title": "Mathématiques 2ème BAC Sciences Mathématiques A BIOF",
       "title_ar": "",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
-      "id": "cours-mathematiques-2eme-bac-sciences-agronomiques-biof",
-      "title": "Mathématiques 2ème BAC Sciences Agronomiques BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof"
-    },
-    {
-      "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
-      "title": "Mathématiques 2ème BAC Sciences et Technologies Électriques BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof"
-    },
-    {
-      "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
-      "title": "Mathématiques 2ème BAC Sciences et Technologies Mécaniques BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof"
-    },
-    {
-      "id": "cours-physique-et-chimie-tronc-commun-technologique-biof",
-      "title": "Physique et Chimie Tronc commun Technologique BIOF",
+      "id": "cours-physique-et-chimie-tronc-commun-sciences-biof",
+      "title": "Physique et Chimie Tronc commun Sciences BIOF",
       "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-technologique-biof"
+      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-sciences-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
@@ -712,6 +664,22 @@
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof"
     },
     {
+      "id": "cours-mathematiques-tronc-commun-sciences-biof",
+      "title": "Mathématiques Tronc commun Sciences BIOF",
+      "title_ar": "",
+      "level_id": "lycee-tc",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-sciences-biof"
+    },
+    {
+      "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-b-biof",
+      "title": "Mathématiques 2ème BAC Sciences Mathématiques B BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof"
+    },
+    {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-physiques-biof",
       "title": "Physique et Chimie 2ème BAC Sciences Physiques BIOF",
       "title_ar": "",
@@ -720,12 +688,60 @@
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-physiques-biof"
     },
     {
+      "id": "cours-mathematiques-2eme-bac-sciences-physiques-biof",
+      "title": "Mathématiques 2ème BAC Sciences Physiques BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-physiques-biof"
+    },
+    {
+      "id": "cours-mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
+      "title": "Mathématiques 2ème BAC Sciences de la Vie et de la Terre BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+    },
+    {
+      "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
+      "title": "Mathématiques 2ème BAC Sciences et Technologies Électriques BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof"
+    },
+    {
+      "id": "cours-mathematiques-2eme-bac-sciences-agronomiques-biof",
+      "title": "Mathématiques 2ème BAC Sciences Agronomiques BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof"
+    },
+    {
       "id": "cours-mathematiques-tronc-commun-technologique-biof",
       "title": "Mathématiques Tronc commun Technologique BIOF",
       "title_ar": "",
       "level_id": "lycee-tc",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-technologique-biof"
+    },
+    {
+      "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
+      "title": "Physique et Chimie 2ème BAC Sciences et Technologies Electriques BIOF",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof"
+    },
+    {
+      "id": "cours-mathematiques-2eme-annee-college",
+      "title": "Mathématiques 2ème Année Collège",
+      "title_ar": "",
+      "level_id": "college-2",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-2eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -744,14 +760,6 @@
       "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-agronomiques-biof"
     },
     {
-      "id": "cours-mathematiques-2eme-annee-college",
-      "title": "Mathématiques 2ème Année Collège",
-      "title_ar": "",
-      "level_id": "college-2",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-annee-college"
-    },
-    {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
       "title": "Physique et Chimie 2ème BAC Sciences et Technologies Mécaniques BIOF",
       "title_ar": "",
@@ -766,14 +774,6 @@
       "level_id": "college-1",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/mathematiques-1ere-annee-college"
-    },
-    {
-      "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
-      "title": "Physique et Chimie 2ème BAC Sciences et Technologies Electriques BIOF",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
@@ -792,14 +792,6 @@
       "url": "https://www.alloschool.com/course/physique-et-chimie-3eme-annee-college"
     },
     {
-      "id": "cours-anglais-2eme-bac-lettres",
-      "title": "Anglais: 2ème BAC Lettres",
-      "title_ar": "",
-      "level_id": "lycee-2bac",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-lettres"
-    },
-    {
       "id": "cours-anglais-2eme-bac-sciences-humaines",
       "title": "Anglais: 2ème BAC Sciences Humaines",
       "title_ar": "",
@@ -816,20 +808,28 @@
       "url": "https://www.alloschool.com/course/francais-1ere-annee-primaire"
     },
     {
-      "id": "cours-mathematiques-3eme-annee-college",
-      "title": "Mathématiques 3ème Année Collège",
-      "title_ar": "",
-      "level_id": "college-3",
-      "content_type": "cours",
-      "url": "https://www.alloschool.com/course/mathematiques-3eme-annee-college"
-    },
-    {
       "id": "cours-francais-2eme-annee-primaire",
       "title": "Français: 2ème Année Primaire",
       "title_ar": "",
       "level_id": "primaire-2",
       "content_type": "cours",
       "url": "https://www.alloschool.com/course/francais-2eme-annee-primaire"
+    },
+    {
+      "id": "cours-anglais-2eme-bac-lettres",
+      "title": "Anglais: 2ème BAC Lettres",
+      "title_ar": "",
+      "level_id": "lycee-2bac",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/anglais-2eme-bac-lettres"
+    },
+    {
+      "id": "cours-mathematiques-3eme-annee-college",
+      "title": "Mathématiques 3ème Année Collège",
+      "title_ar": "",
+      "level_id": "college-3",
+      "content_type": "cours",
+      "url": "https://www.alloschool.com/course/mathematiques-3eme-annee-college"
     }
   ]
 }
