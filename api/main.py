@@ -32,11 +32,13 @@ app.add_middleware(
 )
 
 # Load data
-DATA_FILE = Path(__file__).parent.parent / "data" / "fast_collected_data_20251022_233523.json"
+DATA_FILE = Path(__file__).parent / "data.json"
 if not DATA_FILE.exists():
-    # Try alternative path
-    DATA_FILE = Path(__file__).parent / ".." / "data" / "fast_collected_data_20251022_233523.json"
-    DATA_FILE = DATA_FILE.resolve()
+    # Try alternative paths
+    DATA_FILE = Path(__file__).parent.parent / "data" / "fast_collected_data_20251022_233523.json"
+    if not DATA_FILE.exists():
+        DATA_FILE = Path(__file__).parent / ".." / "data" / "fast_collected_data_20251022_233523.json"
+        DATA_FILE = DATA_FILE.resolve()
 
 def load_data():
     """Load education data from JSON file"""
