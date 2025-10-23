@@ -256,8 +256,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-- **GitHub**: [@K11E3R](https://github.com/K11E3R)
-- **Repository**: [moroccan-education-API](https://github.com/K11E3R/moroccan-education-API)
+- **mail**: prs.online.00@gmail.com
 - **Issues**: [Report a bug](https://github.com/K11E3R/moroccan-education-API/issues)
 
 ## ⭐ Show Your Support
