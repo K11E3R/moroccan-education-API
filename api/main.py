@@ -74,7 +74,18 @@ async def root():
         "status": "operational",
         "data_source": "Public Moroccan Education Websites",
         "last_update": education_data.get("collection_date", "N/A"),
-        "total_items": education_data.get("metadata", {}).get("total_items", 0)
+        "total_items": education_data.get("metadata", {}).get("total_items", 0),
+        "made_by": "Moroccan Developers Community",
+        "github": {
+            "repository": "https://github.com/K11E3R/moroccan-education-API",
+            "issues": "https://github.com/K11E3R/moroccan-education-API/issues",
+            "contribute": "https://github.com/K11E3R/moroccan-education-API#contributing"
+        },
+        "support": {
+            "report_issue": "https://github.com/K11E3R/moroccan-education-API/issues/new",
+            "contribute": "Fork the repo and submit a PR",
+            "contact": "Open an issue on GitHub"
+        }
     }
 
 @app.get("/api/v1/levels")
