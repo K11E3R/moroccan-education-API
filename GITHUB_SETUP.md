@@ -11,7 +11,7 @@ Complete guide to push your project to GitHub and deploy to Railway.
 
 ## 🔗 GitHub Repository
 
-**Repository URL**: https://github.com/K11E3R/-moroccan-education-API
+**Repository URL**: https://github.com/K11E3R/moroccan-education-API
 
 ## 📤 Push to GitHub
 
@@ -35,7 +35,7 @@ git commit -m "Initial commit: Moroccan Education API"
 
 ```bash
 # Add remote repository
-git remote add origin https://github.com/K11E3R/-moroccan-education-API.git
+git remote add origin https://github.com/K11E3R/moroccan-education-API.git
 
 # Verify remote
 git remote -v
@@ -146,7 +146,7 @@ railway up
 2. Select your project
 3. Click "Settings"
 4. Under "Source", click "Connect GitHub"
-5. Select repository: `K11E3R/-moroccan-education-API`
+5. Select repository: `K11E3R/moroccan-education-API`
 6. Select branch: `main`
 7. Enable "Auto-deploy"
 
@@ -246,7 +246,7 @@ Once deployed, share your API:
 
 🔗 API: https://your-app.railway.app
 📚 Docs: https://your-app.railway.app/docs
-💻 GitHub: https://github.com/K11E3R/-moroccan-education-API
+💻 GitHub: https://github.com/K11E3R/moroccan-education-API
 
 ✅ No auth required
 ✅ CORS enabled

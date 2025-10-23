@@ -75,7 +75,7 @@
 git init
 git add .
 git commit -m "Initial commit: Moroccan Education API - Production Ready"
-git remote add origin https://github.com/K11E3R/-moroccan-education-API.git
+git remote add origin https://github.com/K11E3R/moroccan-education-API.git
 git branch -M main
 git push -u origin main
 ```
@@ -164,7 +164,7 @@ Your Moroccan Education API is **production-ready** and **safe for public use**!
 git init
 git add .
 git commit -m "Initial commit: Moroccan Education API - Production Ready"
-git remote add origin https://github.com/K11E3R/-moroccan-education-API.git
+git remote add origin https://github.com/K11E3R/moroccan-education-API.git
 git branch -M main
 git push -u origin main
 ```

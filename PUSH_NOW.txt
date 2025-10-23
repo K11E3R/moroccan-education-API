@@ -39,7 +39,7 @@ git commit -m "Initial commit: Moroccan Education API - Production Ready
 - Railway deployment ready
 - MIT License"
 
-git remote add origin https://github.com/K11E3R/-moroccan-education-API.git
+git remote add origin https://github.com/K11E3R/moroccan-education-API.git
 git branch -M main
 git push -u origin main
 

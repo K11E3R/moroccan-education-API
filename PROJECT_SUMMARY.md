@@ -124,7 +124,7 @@ moroccan-education-API/
    git init
    git add .
    git commit -m "Initial commit: Moroccan Education API - Production Ready"
-   git remote add origin https://github.com/K11E3R/-moroccan-education-API.git
+   git remote add origin https://github.com/K11E3R/moroccan-education-API.git
    git branch -M main
    git push -u origin main
    ```
@@ -154,7 +154,7 @@ moroccan-education-API/
 
 ### 📞 Repository Information
 
-- **GitHub**: https://github.com/K11E3R/-moroccan-education-API
+- **GitHub**: https://github.com/K11E3R/moroccan-education-API
 - **Author**: @K11E3R
 - **License**: MIT
 - **Status**: Production Ready
@@ -168,7 +168,7 @@ moroccan-education-API/
 
 ### ⭐ Quality Badges
 
-[![API Status](https://img.shields.io/badge/API-Live-success)](https://github.com/K11E3R/-moroccan-education-API)
+[![API Status](https://img.shields.io/badge/API-Live-success)](https://github.com/K11E3R/moroccan-education-API)
 [![Tests](https://img.shields.io/badge/tests-12%2F13%20passing-success)](./TEST_RESULTS.md)
 [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![Data Quality](https://img.shields.io/badge/quality-0.85%2F1.0-success)](./DATA_VISUALIZATION.md)

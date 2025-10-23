@@ -2,10 +2,11 @@
 
 Free, open-source REST API providing access to Moroccan education data. Built for developers, by developers.
 
-[![API Status](https://img.shields.io/badge/API-Live-success)](https://github.com/K11E3R/-moroccan-education-API)
-[![Tests](https://img.shields.io/badge/tests-12%2F13%20passing-success)](./TEST_RESULTS.md)
+[![CI/CD](https://github.com/K11E3R/moroccan-education-API/actions/workflows/test-and-deploy.yml/badge.svg)](https://github.com/K11E3R/moroccan-education-API/actions)
+[![API Status](https://img.shields.io/badge/API-Live-success)](https://github.com/K11E3R/moroccan-education-API)
+[![Tests](https://img.shields.io/badge/tests-passing-success)](./TEST_RESULTS.md)
 [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
-[![Data Quality](https://img.shields.io/badge/quality-0.85%2F1.0-success)](./DATA_VISUALIZATION.md)
+[![Data Quality](https://img.shields.io/badge/quality-1.0%2F1.0-success)](./DATA_VISUALIZATION.md)
 
 ## ✨ Features
 
@@ -157,7 +158,7 @@ All subjects include color codes and icon names for easy UI integration:
 
 ```bash
 # Clone repository
-git clone https://github.com/K11E3R/-moroccan-education-API.git
+git clone https://github.com/K11E3R/moroccan-education-API.git
 cd moroccan-education-API
 
 # Create virtual environment
@@ -256,8 +257,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact & Support
 
 - **GitHub**: [@K11E3R](https://github.com/K11E3R)
-- **Repository**: [moroccan-education-API](https://github.com/K11E3R/-moroccan-education-API)
-- **Issues**: [Report a bug](https://github.com/K11E3R/-moroccan-education-API/issues)
+- **Repository**: [moroccan-education-API](https://github.com/K11E3R/moroccan-education-API)
+- **Issues**: [Report a bug](https://github.com/K11E3R/moroccan-education-API/issues)
 
 ## ⭐ Show Your Support
 
