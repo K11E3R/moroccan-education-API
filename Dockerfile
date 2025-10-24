@@ -17,6 +17,5 @@ ENV PYTHONPATH=/app
 # Expose port
 EXPOSE 8000
 
-# Start command
+# Set working directory to api
 WORKDIR /app/api
-CMD ["sh", "-c", "python -m uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
