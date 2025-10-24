@@ -264,7 +264,6 @@ async def root():
             "platform": "Railway",
             "status": "operational" if success_rate >= 95 else "degraded",
             "uptime": real_uptime,
-            "project_id": RAILWAY_PROJECT_ID[:8] + "..." if RAILWAY_PROJECT_ID else "not_configured",
             "region": "Global CDN",
             "account_linked": True,
             
