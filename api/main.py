@@ -293,7 +293,7 @@ async def root():
             "support": {
                 "email": "prs.online.00@gmail.com",
                 "github_issues": "https://github.com/K11E3R/moroccan-education-API/issues",
-                "response_time": "24-48 hours",
+                "response_time": "12-24 hours",
                 "documentation": "/docs",
                 "api_status": "/health"
             },
