@@ -1,6 +1,6 @@
 {
   "collection_date": "2025-10-23T15:10:13.285759",
-  "base_url": "https://www.alloschool.com",
+  "base_url": "https://www.sad_data.com",
   "cleaning_date": "2025-10-23T17:38:29.894081",
   "statistics": {
     "total_levels": 12,
@@ -870,7 +870,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "francais-lycee-tc",
-      "url": "https://www.alloschool.com/course/francais-tronc-commun-sciences"
+      "url": "https://www.sad_data.com/course/francais-tronc-commun-sciences"
     },
     {
       "id": "cours-informatique-tronc-commun-sciences",
@@ -878,7 +878,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "informatique-lycee-tc",
-      "url": "https://www.alloschool.com/course/informatique-tronc-commun-sciences"
+      "url": "https://www.sad_data.com/course/informatique-tronc-commun-sciences"
     },
     {
       "id": "cours-francais-tronc-commun-technologique",
@@ -886,14 +886,14 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "francais-lycee-tc",
-      "url": "https://www.alloschool.com/course/francais-tronc-commun-technologique"
+      "url": "https://www.sad_data.com/course/francais-tronc-commun-technologique"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-tronc-commun-technologique",
       "title": "Sciences de l'ingénieur: Tronc commun Technologique",
       "level_id": "lycee-tc",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-tronc-commun-technologique"
+      "url": "https://www.sad_data.com/course/sciences-de-l-ingenieur-tronc-commun-technologique"
     },
     {
       "id": "cours-informatique-tronc-commun-technologique",
@@ -901,7 +901,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "informatique-lycee-tc",
-      "url": "https://www.alloschool.com/course/informatique-tronc-commun-technologique"
+      "url": "https://www.sad_data.com/course/informatique-tronc-commun-technologique"
     },
     {
       "id": "cours-anglais-tronc-commun-technologique",
@@ -909,7 +909,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "anglais-lycee-tc",
-      "url": "https://www.alloschool.com/course/anglais-tronc-commun-technologique"
+      "url": "https://www.sad_data.com/course/anglais-tronc-commun-technologique"
     },
     {
       "id": "cours-anglais-tronc-commun-sciences",
@@ -917,7 +917,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "anglais-lycee-tc",
-      "url": "https://www.alloschool.com/course/anglais-tronc-commun-sciences"
+      "url": "https://www.sad_data.com/course/anglais-tronc-commun-sciences"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-mathematiques-b",
@@ -925,7 +925,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-b"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-mathematiques-b"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
@@ -933,7 +933,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-mathematiques-a",
@@ -941,7 +941,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-mathematiques-a"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-mathematiques-a"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-physiques",
@@ -949,7 +949,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-physiques"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-physiques"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b",
@@ -957,7 +957,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b"
+      "url": "https://www.sad_data.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-mathematiques-b"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-mathematiques-b",
@@ -965,7 +965,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-b"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-mathematiques-b"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-mathematiques-a",
@@ -973,7 +973,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-mathematiques-a"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-mathematiques-a"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre",
@@ -981,7 +981,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-de-la-vie-et-de-la-terre"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-physiques",
@@ -989,7 +989,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-physiques"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-physiques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-et-technologies-mecaniques",
@@ -997,7 +997,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-mecaniques"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-et-technologies-electriques",
@@ -1005,7 +1005,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-et-technologies-electriques"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-et-technologies-electriques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-agronomiques",
@@ -1013,28 +1013,28 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-agronomiques"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques",
       "title": "Sciences Végétales et Animales: 2eme BAC Sciences Agronomiques",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques"
+      "url": "https://www.sad_data.com/course/sciences-vegetales-et-animales-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques",
       "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Mécaniques",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques"
+      "url": "https://www.sad_data.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
       "id": "cours-sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques",
       "title": "Sciences de l'ingénieur: 2ème BAC Sciences et Technologies Electriques",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques"
+      "url": "https://www.sad_data.com/course/sciences-de-l-ingenieur-2eme-bac-sciences-et-technologies-electriques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-et-technologies-mecaniques",
@@ -1042,7 +1042,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-mecaniques"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-et-technologies-mecaniques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-agronomiques",
@@ -1050,7 +1050,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-agronomiques"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-agronomiques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-et-technologies-electriques",
@@ -1058,7 +1058,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-et-technologies-electriques"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-et-technologies-electriques"
     },
     {
       "id": "cours-informatique-de-gestion-2eme-bac-sciences-economiques",
@@ -1066,7 +1066,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "informatique-lycee-2bac",
-      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/informatique-de-gestion-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc",
@@ -1074,7 +1074,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc",
@@ -1082,14 +1082,14 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "informatique-lycee-2bac",
-      "url": "https://www.alloschool.com/course/informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/informatique-de-gestion-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-droit-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Droit: 2eme BAC Sciences de Gestion Comptable (SGC)",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/droit-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-francais-2eme-bac-lettres",
@@ -1097,21 +1097,21 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-lettres"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-lettres"
     },
     {
       "id": "cours-economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Économie et Organisation Administrative des Entreprises : 2ème BAC Sciences de Gestion Comptable (SGC)",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc",
       "title": "Économie générale et Statistiques : 2ème BAC Sciences de Gestion Comptable (SGC)",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/economie-generale-et-statistiques-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-de-gestion-comptable-sgc",
@@ -1119,7 +1119,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc",
@@ -1127,7 +1127,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-francais-2eme-bac-sciences-economiques",
@@ -1135,7 +1135,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "francais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/francais-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/francais-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-economiques",
@@ -1143,7 +1143,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc",
@@ -1151,21 +1151,21 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-de-gestion-comptable-sgc"
     },
     {
       "id": "cours-economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques",
       "title": "Économie et Organisation Administrative des Entreprises : 2ème BAC Sciences Économiques",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/economie-et-organisation-administrative-des-entreprises-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-droit-2eme-bac-sciences-economiques",
       "title": "Droit: 2ème BAC Sciences Économiques",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/droit-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/droit-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques",
@@ -1173,7 +1173,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/comptabilite-et-mathematiques-financieres-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-anglais-2eme-bac-sciences-economiques",
@@ -1181,14 +1181,14 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-economie-generale-et-statistiques-2eme-bac-sciences-economiques",
       "title": "Économie générale et Statistiques : 2ème BAC Sciences Économiques",
       "level_id": "lycee-2bac",
       "content_type": "cours",
-      "url": "https://www.alloschool.com/course/economie-generale-et-statistiques-2eme-bac-sciences-economiques"
+      "url": "https://www.sad_data.com/course/economie-generale-et-statistiques-2eme-bac-sciences-economiques"
     },
     {
       "id": "cours-francais-2eme-annee-college",
@@ -1196,7 +1196,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "subject_id": "francais-college-2",
-      "url": "https://www.alloschool.com/course/francais-2eme-annee-college"
+      "url": "https://www.sad_data.com/course/francais-2eme-annee-college"
     },
     {
       "id": "cours-francais-1ere-annee-college",
@@ -1204,7 +1204,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "subject_id": "francais-college-1",
-      "url": "https://www.alloschool.com/course/francais-1ere-annee-college"
+      "url": "https://www.sad_data.com/course/francais-1ere-annee-college"
     },
     {
       "id": "cours-informatique-2eme-annee-college",
@@ -1212,7 +1212,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "subject_id": "informatique-college-2",
-      "url": "https://www.alloschool.com/course/informatique-2eme-annee-college"
+      "url": "https://www.sad_data.com/course/informatique-2eme-annee-college"
     },
     {
       "id": "cours-informatique-1ere-annee-college",
@@ -1220,7 +1220,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "subject_id": "informatique-college-1",
-      "url": "https://www.alloschool.com/course/informatique-1ere-annee-college"
+      "url": "https://www.sad_data.com/course/informatique-1ere-annee-college"
     },
     {
       "id": "cours-informatique-3eme-annee-college",
@@ -1228,7 +1228,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "subject_id": "informatique-college-3",
-      "url": "https://www.alloschool.com/course/informatique-3eme-annee-college"
+      "url": "https://www.sad_data.com/course/informatique-3eme-annee-college"
     },
     {
       "id": "cours-francais-3eme-annee-college",
@@ -1236,7 +1236,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "subject_id": "francais-college-3",
-      "url": "https://www.alloschool.com/course/francais-3eme-annee-college"
+      "url": "https://www.sad_data.com/course/francais-3eme-annee-college"
     },
     {
       "id": "cours-anglais-2eme-annee-college",
@@ -1244,7 +1244,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "subject_id": "anglais-college-2",
-      "url": "https://www.alloschool.com/course/anglais-2eme-annee-college"
+      "url": "https://www.sad_data.com/course/anglais-2eme-annee-college"
     },
     {
       "id": "cours-anglais-1ere-annee-college",
@@ -1252,7 +1252,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "subject_id": "anglais-college-1",
-      "url": "https://www.alloschool.com/course/anglais-1ere-annee-college"
+      "url": "https://www.sad_data.com/course/anglais-1ere-annee-college"
     },
     {
       "id": "cours-anglais-3eme-annee-college",
@@ -1260,7 +1260,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "subject_id": "anglais-college-3",
-      "url": "https://www.alloschool.com/course/anglais-3eme-annee-college"
+      "url": "https://www.sad_data.com/course/anglais-3eme-annee-college"
     },
     {
       "id": "cours-francais-6eme-annee-primaire",
@@ -1268,7 +1268,7 @@
       "level_id": "primaire-6",
       "content_type": "cours",
       "subject_id": "francais-primaire-6",
-      "url": "https://www.alloschool.com/course/francais-6eme-annee-primaire"
+      "url": "https://www.sad_data.com/course/francais-6eme-annee-primaire"
     },
     {
       "id": "cours-francais-3eme-annee-primaire",
@@ -1276,7 +1276,7 @@
       "level_id": "primaire-3",
       "content_type": "cours",
       "subject_id": "francais-primaire-3",
-      "url": "https://www.alloschool.com/course/francais-3eme-annee-primaire"
+      "url": "https://www.sad_data.com/course/francais-3eme-annee-primaire"
     },
     {
       "id": "cours-francais-5eme-annee-primaire",
@@ -1284,7 +1284,7 @@
       "level_id": "primaire-5",
       "content_type": "cours",
       "subject_id": "francais-primaire-5",
-      "url": "https://www.alloschool.com/course/francais-5eme-annee-primaire"
+      "url": "https://www.sad_data.com/course/francais-5eme-annee-primaire"
     },
     {
       "id": "cours-francais-4eme-annee-primaire",
@@ -1292,7 +1292,7 @@
       "level_id": "primaire-4",
       "content_type": "cours",
       "subject_id": "francais-primaire-4",
-      "url": "https://www.alloschool.com/course/francais-4eme-annee-primaire"
+      "url": "https://www.sad_data.com/course/francais-4eme-annee-primaire"
     },
     {
       "id": "cours-physique-et-chimie-1ere-annee-college",
@@ -1300,7 +1300,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "subject_id": "sciences-college-1",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-1ere-annee-college"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-1ere-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college",
@@ -1308,7 +1308,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "subject_id": "sciences-college-1",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-1ere-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college",
@@ -1316,7 +1316,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "subject_id": "sciences-college-2",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-annee-college",
@@ -1324,7 +1324,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "subject_id": "sciences-college-2",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-annee-college"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-annee-college"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof",
@@ -1332,7 +1332,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
       "id": "cours-physique-et-chimie-tronc-commun-sciences-biof",
@@ -1340,7 +1340,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "sciences-lycee-tc",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-sciences-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-tronc-commun-sciences-biof"
     },
     {
       "id": "cours-mathematiques-tronc-commun-sciences-biof",
@@ -1348,7 +1348,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-tc",
-      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-sciences-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-tronc-commun-sciences-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-a-biof",
@@ -1356,7 +1356,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-mathematiques-b-biof",
@@ -1364,7 +1364,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-mathematiques-b-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-physiques-biof",
@@ -1372,7 +1372,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-physiques-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences",
@@ -1380,7 +1380,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "sciences-lycee-tc",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-tronc-commun-sciences"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof",
@@ -1388,7 +1388,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -1396,7 +1396,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -1404,7 +1404,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-agronomiques-biof",
@@ -1412,7 +1412,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-agronomiques-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-electriques-biof",
@@ -1420,7 +1420,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-et-technologies-electriques-biof"
     },
     {
       "id": "cours-mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof",
@@ -1428,7 +1428,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-bac-sciences-et-technologies-mecaniques-biof"
     },
     {
       "id": "cours-physique-et-chimie-tronc-commun-technologique-biof",
@@ -1436,7 +1436,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "sciences-lycee-tc",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-tronc-commun-technologique-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-tronc-commun-technologique-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof",
@@ -1444,7 +1444,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-a-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof",
@@ -1452,7 +1452,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-mathematiques-b-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-physiques-biof",
@@ -1460,7 +1460,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-physiques-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-physiques-biof"
     },
     {
       "id": "cours-mathematiques-tronc-commun-technologique-biof",
@@ -1468,7 +1468,7 @@
       "level_id": "lycee-tc",
       "content_type": "cours",
       "subject_id": "mathematiques-lycee-tc",
-      "url": "https://www.alloschool.com/course/mathematiques-tronc-commun-technologique-biof"
+      "url": "https://www.sad_data.com/course/mathematiques-tronc-commun-technologique-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof",
@@ -1476,7 +1476,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-de-la-vie-et-de-la-terre-biof"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-agronomiques-biof",
@@ -1484,7 +1484,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-agronomiques-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-agronomiques-biof"
     },
     {
       "id": "cours-mathematiques-2eme-annee-college",
@@ -1492,7 +1492,7 @@
       "level_id": "college-2",
       "content_type": "cours",
       "subject_id": "mathematiques-college-2",
-      "url": "https://www.alloschool.com/course/mathematiques-2eme-annee-college"
+      "url": "https://www.sad_data.com/course/mathematiques-2eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof",
@@ -1500,7 +1500,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-mecaniques-biof"
     },
     {
       "id": "cours-mathematiques-1ere-annee-college",
@@ -1508,7 +1508,7 @@
       "level_id": "college-1",
       "content_type": "cours",
       "subject_id": "mathematiques-college-1",
-      "url": "https://www.alloschool.com/course/mathematiques-1ere-annee-college"
+      "url": "https://www.sad_data.com/course/mathematiques-1ere-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof",
@@ -1516,7 +1516,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "sciences-lycee-2bac",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-2eme-bac-sciences-et-technologies-electriques-biof"
     },
     {
       "id": "cours-sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college",
@@ -1524,7 +1524,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "subject_id": "sciences-college-3",
-      "url": "https://www.alloschool.com/course/sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college"
+      "url": "https://www.sad_data.com/course/sciences-de-la-vie-et-de-la-terre-svt-3eme-annee-college"
     },
     {
       "id": "cours-physique-et-chimie-3eme-annee-college",
@@ -1532,7 +1532,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "subject_id": "sciences-college-3",
-      "url": "https://www.alloschool.com/course/physique-et-chimie-3eme-annee-college"
+      "url": "https://www.sad_data.com/course/physique-et-chimie-3eme-annee-college"
     },
     {
       "id": "cours-anglais-2eme-bac-lettres",
@@ -1540,7 +1540,7 @@
       "level_id": "lycee-2bac",
       "content_type": "cours",
       "subject_id": "anglais-lycee-2bac",
-      "url": "https://www.alloschool.com/course/anglais-2eme-bac-lettres"
+      "url": "https://www.sad_data.com/course/anglais-2eme-bac-lettres"
     },
     {
       "id": "cours-francais-1ere-annee-primaire",
@@ -1548,7 +1548,7 @@
       "level_id": "primaire-1",
       "content_type": "cours",
       "subject_id": "francais-primaire-1",
-      "url": "https://www.alloschool.com/course/francais-1ere-annee-primaire"
+      "url": "https://www.sad_data.com/course/francais-1ere-annee-primaire"
     },
     {
       "id": "cours-mathematiques-3eme-annee-college",
@@ -1556,7 +1556,7 @@
       "level_id": "college-3",
       "content_type": "cours",
       "subject_id": "mathematiques-college-3",
-      "url": "https://www.alloschool.com/course/mathematiques-3eme-annee-college"
+      "url": "https://www.sad_data.com/course/mathematiques-3eme-annee-college"
     },
     {
       "id": "cours-francais-2eme-annee-primaire",
@@ -1564,7 +1564,7 @@
       "level_id": "primaire-2",
       "content_type": "cours",
       "subject_id": "francais-primaire-2",
-      "url": "https://www.alloschool.com/course/francais-2eme-annee-primaire"
+      "url": "https://www.sad_data.com/course/francais-2eme-annee-primaire"
     },
     {
       "id": "exercice-mathematiques-lycee-2bac-1",
@@ -1575,7 +1575,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 37,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-1",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-1",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1588,7 +1588,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 34,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-2",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-2",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1601,7 +1601,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 60,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-3",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-3",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1614,7 +1614,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 31,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-4",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-4",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1627,7 +1627,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 15,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-5",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-5",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1640,7 +1640,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 47,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-6",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-6",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1653,7 +1653,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 34,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-7",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-7",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1666,7 +1666,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 54,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-8",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-8",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1679,7 +1679,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 52,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-9",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-9",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1692,7 +1692,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 28,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-10",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-10",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1705,7 +1705,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 57,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-11",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-11",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1718,7 +1718,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 58,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-12",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-12",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1731,7 +1731,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 22,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-13",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-13",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1744,7 +1744,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 57,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-14",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-14",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1757,7 +1757,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 25,
-      "url": "https://www.alloschool.com/exercise/mathematiques-lycee-2bac-15",
+      "url": "https://www.sad_data.com/exercise/mathematiques-lycee-2bac-15",
       "description": "Exercice pratique pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1770,7 +1770,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 174,
       "max_score": 30,
-      "url": "https://www.alloschool.com/examen/mathematiques-lycee-2bac-1",
+      "url": "https://www.sad_data.com/examen/mathematiques-lycee-2bac-1",
       "description": "Examen pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1783,7 +1783,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 146,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/mathematiques-lycee-2bac-2",
+      "url": "https://www.sad_data.com/controle/mathematiques-lycee-2bac-2",
       "description": "Controle pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1796,7 +1796,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 96,
       "max_score": 20,
-      "url": "https://www.alloschool.com/controle/mathematiques-lycee-2bac-3",
+      "url": "https://www.sad_data.com/controle/mathematiques-lycee-2bac-3",
       "description": "Controle pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1809,7 +1809,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 95,
       "max_score": 20,
-      "url": "https://www.alloschool.com/examen/mathematiques-lycee-2bac-4",
+      "url": "https://www.sad_data.com/examen/mathematiques-lycee-2bac-4",
       "description": "Examen pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1822,7 +1822,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 107,
       "max_score": 25,
-      "url": "https://www.alloschool.com/devoir/mathematiques-lycee-2bac-5",
+      "url": "https://www.sad_data.com/devoir/mathematiques-lycee-2bac-5",
       "description": "Devoir pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1835,7 +1835,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 122,
       "max_score": 25,
-      "url": "https://www.alloschool.com/devoir/mathematiques-lycee-2bac-6",
+      "url": "https://www.sad_data.com/devoir/mathematiques-lycee-2bac-6",
       "description": "Devoir pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1848,7 +1848,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 139,
       "max_score": 20,
-      "url": "https://www.alloschool.com/controle/mathematiques-lycee-2bac-7",
+      "url": "https://www.sad_data.com/controle/mathematiques-lycee-2bac-7",
       "description": "Controle pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1861,7 +1861,7 @@
       "subject_id": "mathematiques-lycee-2bac",
       "duration": 113,
       "max_score": 30,
-      "url": "https://www.alloschool.com/devoir/mathematiques-lycee-2bac-8",
+      "url": "https://www.sad_data.com/devoir/mathematiques-lycee-2bac-8",
       "description": "Devoir pour Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1874,7 +1874,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 25,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-1",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1887,7 +1887,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 47,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-2",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1900,7 +1900,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 51,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-3",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1913,7 +1913,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 16,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-4",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1926,7 +1926,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 53,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-5",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-5",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1939,7 +1939,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 43,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-6",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1952,7 +1952,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 30,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-7",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1965,7 +1965,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 18,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-8",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-8",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1978,7 +1978,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 45,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-9",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-9",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -1991,7 +1991,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 54,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-10",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-10",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2004,7 +2004,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 45,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-11",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-11",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2017,7 +2017,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 36,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-12",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-12",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2030,7 +2030,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 19,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-13",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-13",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2043,7 +2043,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 47,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-14",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-14",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2056,7 +2056,7 @@
       "subject_id": "francais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 51,
-      "url": "https://www.alloschool.com/exercise/francais-lycee-2bac-15",
+      "url": "https://www.sad_data.com/exercise/francais-lycee-2bac-15",
       "description": "Exercice pratique pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2069,7 +2069,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 128,
       "max_score": 25,
-      "url": "https://www.alloschool.com/examen/francais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/examen/francais-lycee-2bac-1",
       "description": "Examen pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2082,7 +2082,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 161,
       "max_score": 25,
-      "url": "https://www.alloschool.com/controle/francais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/controle/francais-lycee-2bac-2",
       "description": "Controle pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2095,7 +2095,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 174,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/francais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/controle/francais-lycee-2bac-3",
       "description": "Controle pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2108,7 +2108,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 180,
       "max_score": 20,
-      "url": "https://www.alloschool.com/devoir/francais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/devoir/francais-lycee-2bac-4",
       "description": "Devoir pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2121,7 +2121,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 134,
       "max_score": 20,
-      "url": "https://www.alloschool.com/devoir/francais-lycee-2bac-5",
+      "url": "https://www.sad_data.com/devoir/francais-lycee-2bac-5",
       "description": "Devoir pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2134,7 +2134,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 163,
       "max_score": 25,
-      "url": "https://www.alloschool.com/examen/francais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/examen/francais-lycee-2bac-6",
       "description": "Examen pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2147,7 +2147,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 152,
       "max_score": 20,
-      "url": "https://www.alloschool.com/devoir/francais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/devoir/francais-lycee-2bac-7",
       "description": "Devoir pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2160,7 +2160,7 @@
       "subject_id": "francais-lycee-2bac",
       "duration": 66,
       "max_score": 25,
-      "url": "https://www.alloschool.com/devoir/francais-lycee-2bac-8",
+      "url": "https://www.sad_data.com/devoir/francais-lycee-2bac-8",
       "description": "Devoir pour Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2173,7 +2173,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 35,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-1",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2186,7 +2186,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 42,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-2",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2199,7 +2199,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 20,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-3",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2212,7 +2212,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 53,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-4",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2225,7 +2225,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 34,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-5",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-5",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2238,7 +2238,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 17,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-6",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2251,7 +2251,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 20,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-7",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2264,7 +2264,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 21,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-8",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-8",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2277,7 +2277,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 42,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-9",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-9",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2290,7 +2290,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 24,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-10",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-10",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2303,7 +2303,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 34,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-11",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-11",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2316,7 +2316,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 22,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-12",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-12",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2329,7 +2329,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 22,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-13",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-13",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2342,7 +2342,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 18,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-14",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-14",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2355,7 +2355,7 @@
       "subject_id": "anglais-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 33,
-      "url": "https://www.alloschool.com/exercise/anglais-lycee-2bac-15",
+      "url": "https://www.sad_data.com/exercise/anglais-lycee-2bac-15",
       "description": "Exercice pratique pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2368,7 +2368,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 146,
       "max_score": 25,
-      "url": "https://www.alloschool.com/devoir/anglais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/devoir/anglais-lycee-2bac-1",
       "description": "Devoir pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2381,7 +2381,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 106,
       "max_score": 20,
-      "url": "https://www.alloschool.com/examen/anglais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/examen/anglais-lycee-2bac-2",
       "description": "Examen pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2394,7 +2394,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 76,
       "max_score": 25,
-      "url": "https://www.alloschool.com/controle/anglais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/controle/anglais-lycee-2bac-3",
       "description": "Controle pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2407,7 +2407,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 179,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/anglais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/controle/anglais-lycee-2bac-4",
       "description": "Controle pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2420,7 +2420,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 69,
       "max_score": 30,
-      "url": "https://www.alloschool.com/devoir/anglais-lycee-2bac-5",
+      "url": "https://www.sad_data.com/devoir/anglais-lycee-2bac-5",
       "description": "Devoir pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2433,7 +2433,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 121,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/anglais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/controle/anglais-lycee-2bac-6",
       "description": "Controle pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2446,7 +2446,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 167,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/anglais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/controle/anglais-lycee-2bac-7",
       "description": "Controle pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2459,7 +2459,7 @@
       "subject_id": "anglais-lycee-2bac",
       "duration": 61,
       "max_score": 30,
-      "url": "https://www.alloschool.com/devoir/anglais-lycee-2bac-8",
+      "url": "https://www.sad_data.com/devoir/anglais-lycee-2bac-8",
       "description": "Devoir pour Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2472,7 +2472,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 26,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-1",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-1",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2485,7 +2485,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 15,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-2",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-2",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2498,7 +2498,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 23,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-3",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-3",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2511,7 +2511,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 17,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-4",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-4",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2524,7 +2524,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 55,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-5",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-5",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2537,7 +2537,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 41,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-6",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-6",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2550,7 +2550,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 55,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-7",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-7",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2563,7 +2563,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 46,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-8",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-8",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2576,7 +2576,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 35,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-9",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-9",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2589,7 +2589,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 55,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-10",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-10",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2602,7 +2602,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 24,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-11",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-11",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2615,7 +2615,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "difficile",
       "estimated_time": 42,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-12",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-12",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2628,7 +2628,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 29,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-13",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-13",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2641,7 +2641,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "moyen",
       "estimated_time": 28,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-14",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-14",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2654,7 +2654,7 @@
       "subject_id": "sciences-lycee-2bac",
       "difficulty": "facile",
       "estimated_time": 52,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-2bac-15",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-2bac-15",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2667,7 +2667,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 82,
       "max_score": 20,
-      "url": "https://www.alloschool.com/devoir/sciences-lycee-2bac-1",
+      "url": "https://www.sad_data.com/devoir/sciences-lycee-2bac-1",
       "description": "Devoir pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2680,7 +2680,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 64,
       "max_score": 20,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-2bac-2",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-2bac-2",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2693,7 +2693,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 69,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-2bac-3",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-2bac-3",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2706,7 +2706,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 76,
       "max_score": 25,
-      "url": "https://www.alloschool.com/devoir/sciences-lycee-2bac-4",
+      "url": "https://www.sad_data.com/devoir/sciences-lycee-2bac-4",
       "description": "Devoir pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2719,7 +2719,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 175,
       "max_score": 25,
-      "url": "https://www.alloschool.com/examen/sciences-lycee-2bac-5",
+      "url": "https://www.sad_data.com/examen/sciences-lycee-2bac-5",
       "description": "Examen pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2732,7 +2732,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 172,
       "max_score": 25,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-2bac-6",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-2bac-6",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2745,7 +2745,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 93,
       "max_score": 25,
-      "url": "https://www.alloschool.com/examen/sciences-lycee-2bac-7",
+      "url": "https://www.sad_data.com/examen/sciences-lycee-2bac-7",
       "description": "Examen pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2758,7 +2758,7 @@
       "subject_id": "sciences-lycee-2bac",
       "duration": 139,
       "max_score": 25,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-2bac-8",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-2bac-8",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2771,7 +2771,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 16,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-1",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-1",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2784,7 +2784,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "facile",
       "estimated_time": 28,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-2",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-2",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2797,7 +2797,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 39,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-3",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-3",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2810,7 +2810,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "moyen",
       "estimated_time": 46,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-4",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-4",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2823,7 +2823,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "facile",
       "estimated_time": 24,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-5",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-5",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2836,7 +2836,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "moyen",
       "estimated_time": 40,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-6",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-6",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2849,7 +2849,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "moyen",
       "estimated_time": 59,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-7",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-7",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2862,7 +2862,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 17,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-8",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-8",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2875,7 +2875,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 15,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-9",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-9",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2888,7 +2888,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 35,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-10",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-10",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2901,7 +2901,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 40,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-11",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-11",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2914,7 +2914,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "difficile",
       "estimated_time": 52,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-12",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-12",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2927,7 +2927,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "facile",
       "estimated_time": 50,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-13",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-13",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2940,7 +2940,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "facile",
       "estimated_time": 25,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-14",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-14",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2953,7 +2953,7 @@
       "subject_id": "sciences-lycee-tc",
       "difficulty": "facile",
       "estimated_time": 59,
-      "url": "https://www.alloschool.com/exercise/sciences-lycee-tc-15",
+      "url": "https://www.sad_data.com/exercise/sciences-lycee-tc-15",
       "description": "Exercice pratique pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2966,7 +2966,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 108,
       "max_score": 20,
-      "url": "https://www.alloschool.com/devoir/sciences-lycee-tc-1",
+      "url": "https://www.sad_data.com/devoir/sciences-lycee-tc-1",
       "description": "Devoir pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2979,7 +2979,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 77,
       "max_score": 25,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-tc-2",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-tc-2",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -2992,7 +2992,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 160,
       "max_score": 20,
-      "url": "https://www.alloschool.com/devoir/sciences-lycee-tc-3",
+      "url": "https://www.sad_data.com/devoir/sciences-lycee-tc-3",
       "description": "Devoir pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3005,7 +3005,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 167,
       "max_score": 20,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-tc-4",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-tc-4",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3018,7 +3018,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 145,
       "max_score": 25,
-      "url": "https://www.alloschool.com/examen/sciences-lycee-tc-5",
+      "url": "https://www.sad_data.com/examen/sciences-lycee-tc-5",
       "description": "Examen pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3031,7 +3031,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 111,
       "max_score": 30,
-      "url": "https://www.alloschool.com/controle/sciences-lycee-tc-6",
+      "url": "https://www.sad_data.com/controle/sciences-lycee-tc-6",
       "description": "Controle pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3044,7 +3044,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 91,
       "max_score": 20,
-      "url": "https://www.alloschool.com/examen/sciences-lycee-tc-7",
+      "url": "https://www.sad_data.com/examen/sciences-lycee-tc-7",
       "description": "Examen pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3057,7 +3057,7 @@
       "subject_id": "sciences-lycee-tc",
       "duration": 71,
       "max_score": 25,
-      "url": "https://www.alloschool.com/devoir/sciences-lycee-tc-8",
+      "url": "https://www.sad_data.com/devoir/sciences-lycee-tc-8",
       "description": "Devoir pour Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3069,7 +3069,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-1",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-1",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-1",
       "description": "Correction pour Exercice 1 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3081,7 +3081,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-2",
       "description": "Correction pour Exercice 2 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3093,7 +3093,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-3",
       "description": "Correction pour Exercice 3 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3105,7 +3105,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-4",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-4",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-4",
       "description": "Correction pour Exercice 4 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3117,7 +3117,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-5",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-5",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-5",
       "description": "Correction pour Exercice 5 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3129,7 +3129,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-6",
       "description": "Correction pour Exercice 6 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3141,7 +3141,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-7",
       "description": "Correction pour Exercice 7 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3153,7 +3153,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-8",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-8",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-8",
       "description": "Correction pour Exercice 8 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3165,7 +3165,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-9",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-9",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-9",
       "description": "Correction pour Exercice 9 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3177,7 +3177,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-10",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-10",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-10",
       "description": "Correction pour Exercice 10 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3189,7 +3189,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-11",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-11",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-11",
       "description": "Correction pour Exercice 11 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3201,7 +3201,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-12",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-12",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-12",
       "description": "Correction pour Exercice 12 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3213,7 +3213,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-13",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-13",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-13",
       "description": "Correction pour Exercice 13 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3225,7 +3225,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-14",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-14",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-14",
       "description": "Correction pour Exercice 14 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3237,7 +3237,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "exercice-mathematiques-lycee-2bac-15",
-      "url": "https://www.alloschool.com/correction/exercice-mathematiques-lycee-2bac-15",
+      "url": "https://www.sad_data.com/correction/exercice-mathematiques-lycee-2bac-15",
       "description": "Correction pour Exercice 15 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3249,7 +3249,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "examen-mathematiques-lycee-2bac-1",
-      "url": "https://www.alloschool.com/correction/examen-mathematiques-lycee-2bac-1",
+      "url": "https://www.sad_data.com/correction/examen-mathematiques-lycee-2bac-1",
       "description": "Correction pour Examen 1 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3261,7 +3261,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "controle-mathematiques-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/controle-mathematiques-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/controle-mathematiques-lycee-2bac-2",
       "description": "Correction pour Controle 2 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3273,7 +3273,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "controle-mathematiques-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/controle-mathematiques-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/controle-mathematiques-lycee-2bac-3",
       "description": "Correction pour Controle 3 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3285,7 +3285,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "examen-mathematiques-lycee-2bac-4",
-      "url": "https://www.alloschool.com/correction/examen-mathematiques-lycee-2bac-4",
+      "url": "https://www.sad_data.com/correction/examen-mathematiques-lycee-2bac-4",
       "description": "Correction pour Examen 4 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3297,7 +3297,7 @@
       "content_type": "correction",
       "subject_id": "mathematiques-lycee-2bac",
       "original_content_id": "controle-mathematiques-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/controle-mathematiques-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/controle-mathematiques-lycee-2bac-7",
       "description": "Correction pour Controle 7 - Mathématiques",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3309,7 +3309,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-1",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-1",
       "description": "Correction pour Exercice 1 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3321,7 +3321,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-2",
       "description": "Correction pour Exercice 2 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3333,7 +3333,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-3",
       "description": "Correction pour Exercice 3 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3345,7 +3345,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-4",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-4",
       "description": "Correction pour Exercice 4 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3357,7 +3357,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-5",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-5",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-5",
       "description": "Correction pour Exercice 5 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3369,7 +3369,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-6",
       "description": "Correction pour Exercice 6 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3381,7 +3381,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-7",
       "description": "Correction pour Exercice 7 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3393,7 +3393,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-8",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-8",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-8",
       "description": "Correction pour Exercice 8 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3405,7 +3405,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-9",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-9",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-9",
       "description": "Correction pour Exercice 9 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3417,7 +3417,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-10",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-10",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-10",
       "description": "Correction pour Exercice 10 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3429,7 +3429,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-11",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-11",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-11",
       "description": "Correction pour Exercice 11 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3441,7 +3441,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-12",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-12",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-12",
       "description": "Correction pour Exercice 12 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3453,7 +3453,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-13",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-13",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-13",
       "description": "Correction pour Exercice 13 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3465,7 +3465,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-14",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-14",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-14",
       "description": "Correction pour Exercice 14 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3477,7 +3477,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "exercice-francais-lycee-2bac-15",
-      "url": "https://www.alloschool.com/correction/exercice-francais-lycee-2bac-15",
+      "url": "https://www.sad_data.com/correction/exercice-francais-lycee-2bac-15",
       "description": "Correction pour Exercice 15 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3489,7 +3489,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "examen-francais-lycee-2bac-1",
-      "url": "https://www.alloschool.com/correction/examen-francais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/correction/examen-francais-lycee-2bac-1",
       "description": "Correction pour Examen 1 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3501,7 +3501,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "controle-francais-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/controle-francais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/controle-francais-lycee-2bac-2",
       "description": "Correction pour Controle 2 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3513,7 +3513,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "controle-francais-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/controle-francais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/controle-francais-lycee-2bac-3",
       "description": "Correction pour Controle 3 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3525,7 +3525,7 @@
       "content_type": "correction",
       "subject_id": "francais-lycee-2bac",
       "original_content_id": "examen-francais-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/examen-francais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/examen-francais-lycee-2bac-6",
       "description": "Correction pour Examen 6 - Français",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3537,7 +3537,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-1",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-1",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-1",
       "description": "Correction pour Exercice 1 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3549,7 +3549,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-2",
       "description": "Correction pour Exercice 2 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3561,7 +3561,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-3",
       "description": "Correction pour Exercice 3 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3573,7 +3573,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-4",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-4",
       "description": "Correction pour Exercice 4 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3585,7 +3585,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-5",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-5",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-5",
       "description": "Correction pour Exercice 5 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3597,7 +3597,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-6",
       "description": "Correction pour Exercice 6 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3609,7 +3609,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-7",
       "description": "Correction pour Exercice 7 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3621,7 +3621,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-8",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-8",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-8",
       "description": "Correction pour Exercice 8 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3633,7 +3633,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-9",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-9",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-9",
       "description": "Correction pour Exercice 9 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3645,7 +3645,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-10",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-10",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-10",
       "description": "Correction pour Exercice 10 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3657,7 +3657,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-11",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-11",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-11",
       "description": "Correction pour Exercice 11 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3669,7 +3669,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-12",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-12",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-12",
       "description": "Correction pour Exercice 12 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3681,7 +3681,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-13",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-13",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-13",
       "description": "Correction pour Exercice 13 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3693,7 +3693,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-14",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-14",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-14",
       "description": "Correction pour Exercice 14 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3705,7 +3705,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "exercice-anglais-lycee-2bac-15",
-      "url": "https://www.alloschool.com/correction/exercice-anglais-lycee-2bac-15",
+      "url": "https://www.sad_data.com/correction/exercice-anglais-lycee-2bac-15",
       "description": "Correction pour Exercice 15 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3717,7 +3717,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "examen-anglais-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/examen-anglais-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/examen-anglais-lycee-2bac-2",
       "description": "Correction pour Examen 2 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3729,7 +3729,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "controle-anglais-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/controle-anglais-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/controle-anglais-lycee-2bac-3",
       "description": "Correction pour Controle 3 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3741,7 +3741,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "controle-anglais-lycee-2bac-4",
-      "url": "https://www.alloschool.com/correction/controle-anglais-lycee-2bac-4",
+      "url": "https://www.sad_data.com/correction/controle-anglais-lycee-2bac-4",
       "description": "Correction pour Controle 4 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3753,7 +3753,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "controle-anglais-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/controle-anglais-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/controle-anglais-lycee-2bac-6",
       "description": "Correction pour Controle 6 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3765,7 +3765,7 @@
       "content_type": "correction",
       "subject_id": "anglais-lycee-2bac",
       "original_content_id": "controle-anglais-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/controle-anglais-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/controle-anglais-lycee-2bac-7",
       "description": "Correction pour Controle 7 - Anglais",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3777,7 +3777,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-1",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-1",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-1",
       "description": "Correction pour Exercice 1 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3789,7 +3789,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-2",
       "description": "Correction pour Exercice 2 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3801,7 +3801,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-3",
       "description": "Correction pour Exercice 3 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3813,7 +3813,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-4",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-4",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-4",
       "description": "Correction pour Exercice 4 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3825,7 +3825,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-5",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-5",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-5",
       "description": "Correction pour Exercice 5 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3837,7 +3837,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-6",
       "description": "Correction pour Exercice 6 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3849,7 +3849,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-7",
       "description": "Correction pour Exercice 7 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3861,7 +3861,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-8",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-8",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-8",
       "description": "Correction pour Exercice 8 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3873,7 +3873,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-9",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-9",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-9",
       "description": "Correction pour Exercice 9 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3885,7 +3885,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-10",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-10",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-10",
       "description": "Correction pour Exercice 10 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3897,7 +3897,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-11",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-11",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-11",
       "description": "Correction pour Exercice 11 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3909,7 +3909,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-12",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-12",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-12",
       "description": "Correction pour Exercice 12 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3921,7 +3921,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-13",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-13",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-13",
       "description": "Correction pour Exercice 13 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3933,7 +3933,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-14",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-14",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-14",
       "description": "Correction pour Exercice 14 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3945,7 +3945,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "exercice-sciences-lycee-2bac-15",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-2bac-15",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-2bac-15",
       "description": "Correction pour Exercice 15 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3957,7 +3957,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "controle-sciences-lycee-2bac-2",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-2bac-2",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-2bac-2",
       "description": "Correction pour Controle 2 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3969,7 +3969,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "controle-sciences-lycee-2bac-3",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-2bac-3",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-2bac-3",
       "description": "Correction pour Controle 3 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3981,7 +3981,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "examen-sciences-lycee-2bac-5",
-      "url": "https://www.alloschool.com/correction/examen-sciences-lycee-2bac-5",
+      "url": "https://www.sad_data.com/correction/examen-sciences-lycee-2bac-5",
       "description": "Correction pour Examen 5 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -3993,7 +3993,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "controle-sciences-lycee-2bac-6",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-2bac-6",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-2bac-6",
       "description": "Correction pour Controle 6 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4005,7 +4005,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "examen-sciences-lycee-2bac-7",
-      "url": "https://www.alloschool.com/correction/examen-sciences-lycee-2bac-7",
+      "url": "https://www.sad_data.com/correction/examen-sciences-lycee-2bac-7",
       "description": "Correction pour Examen 7 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4017,7 +4017,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-2bac",
       "original_content_id": "controle-sciences-lycee-2bac-8",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-2bac-8",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-2bac-8",
       "description": "Correction pour Controle 8 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4029,7 +4029,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-1",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-1",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-1",
       "description": "Correction pour Exercice 1 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4041,7 +4041,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-2",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-2",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-2",
       "description": "Correction pour Exercice 2 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4053,7 +4053,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-3",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-3",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-3",
       "description": "Correction pour Exercice 3 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4065,7 +4065,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-4",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-4",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-4",
       "description": "Correction pour Exercice 4 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4077,7 +4077,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-5",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-5",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-5",
       "description": "Correction pour Exercice 5 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4089,7 +4089,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-6",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-6",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-6",
       "description": "Correction pour Exercice 6 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4101,7 +4101,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-7",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-7",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-7",
       "description": "Correction pour Exercice 7 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4113,7 +4113,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-8",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-8",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-8",
       "description": "Correction pour Exercice 8 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4125,7 +4125,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-9",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-9",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-9",
       "description": "Correction pour Exercice 9 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4137,7 +4137,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-10",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-10",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-10",
       "description": "Correction pour Exercice 10 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4149,7 +4149,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-11",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-11",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-11",
       "description": "Correction pour Exercice 11 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4161,7 +4161,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-12",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-12",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-12",
       "description": "Correction pour Exercice 12 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4173,7 +4173,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-13",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-13",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-13",
       "description": "Correction pour Exercice 13 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4185,7 +4185,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-14",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-14",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-14",
       "description": "Correction pour Exercice 14 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4197,7 +4197,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "exercice-sciences-lycee-tc-15",
-      "url": "https://www.alloschool.com/correction/exercice-sciences-lycee-tc-15",
+      "url": "https://www.sad_data.com/correction/exercice-sciences-lycee-tc-15",
       "description": "Correction pour Exercice 15 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4209,7 +4209,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "controle-sciences-lycee-tc-2",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-tc-2",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-tc-2",
       "description": "Correction pour Controle 2 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4221,7 +4221,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "controle-sciences-lycee-tc-4",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-tc-4",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-tc-4",
       "description": "Correction pour Controle 4 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4233,7 +4233,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "examen-sciences-lycee-tc-5",
-      "url": "https://www.alloschool.com/correction/examen-sciences-lycee-tc-5",
+      "url": "https://www.sad_data.com/correction/examen-sciences-lycee-tc-5",
       "description": "Correction pour Examen 5 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4245,7 +4245,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "controle-sciences-lycee-tc-6",
-      "url": "https://www.alloschool.com/correction/controle-sciences-lycee-tc-6",
+      "url": "https://www.sad_data.com/correction/controle-sciences-lycee-tc-6",
       "description": "Correction pour Controle 6 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     },
@@ -4257,7 +4257,7 @@
       "content_type": "correction",
       "subject_id": "sciences-lycee-tc",
       "original_content_id": "examen-sciences-lycee-tc-7",
-      "url": "https://www.alloschool.com/correction/examen-sciences-lycee-tc-7",
+      "url": "https://www.sad_data.com/correction/examen-sciences-lycee-tc-7",
       "description": "Correction pour Examen 7 - Sciences",
       "created_date": "2025-01-01T00:00:00Z"
     }

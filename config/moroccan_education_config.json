@@ -1,6 +1,6 @@
 {
   "collection_config": {
-    "base_url": "https://www.alloschool.com",
+    "base_url": "https://www.sad_data.com",
     "source_name": "public_website",
     "country": "morocco",
     "respect_robots": true,
@@ -10,8 +10,8 @@
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
   },
   "sitemap_urls": [
-    "https://www.alloschool.com/sitemap.xml",
-    "https://www.alloschool.com/sitemap_index.xml"
+    "https://www.sad_data.com/sitemap.xml",
+    "https://www.sad_data.com/sitemap_index.xml"
   ],
   "content_selectors": {
     "title": "h1, .title, .page-title, .content-title",

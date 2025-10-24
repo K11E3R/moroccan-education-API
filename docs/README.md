@@ -104,7 +104,7 @@ This system collects structured educational data from public Moroccan education 
 ```json
 {
   "collection_config": {
-    "base_url": "https://www.alloschool.com",
+    "base_url": "https://www.sad_data.com",
     "source_name": "public_website",
     "country": "morocco",
     "respect_robots": true,
@@ -149,7 +149,7 @@ This system collects structured educational data from public Moroccan education 
 from collectors.fast_collector import FastEducationalCollector, FastCollectionConfig
 
 config = FastCollectionConfig(
-    base_url="https://www.alloschool.com",
+    base_url="https://www.sad_data.com",
     source_name="public_website",
     country="morocco"
 )
