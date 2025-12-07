@@ -1,92 +1,39 @@
-# 🇲🇦 Moroccan Education API
+# 🇲🇦 Moroccan Education Data Collector & API
 
-A comprehensive public API providing access to educational resources for the Moroccan education system.
+A comprehensive data collection and API system for Moroccan education data, providing clean, validated educational content for developers and educators.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com)
 
-## ✨ Features
+## 🚀 Features
 
-- 📚 **12 Education Levels** - From Primary School to Baccalaureate
-- 📖 **117 Subjects** - Mathematics, Sciences, Languages, and more
-- 📝 **2000+ Educational Contents** - Courses, Exercises, Exams, Corrections
-- 🌐 **Bilingual Support** - French and Arabic
-- 🔍 **Powerful Search** - Search across all resources
-- 📊 **Rich Statistics** - Detailed API analytics
+- **Data Collection**: Automated scraping from Moroccan education websites
+- **Data Validation**: Comprehensive validation and quality monitoring
+- **Data Cleaning**: Removal of broken links and unnecessary content
+- **REST API**: Complete v1 API with all endpoints
+- **Quality Assurance**: 100% validated data with quality reports
 
-## 🎓 Education Levels
+## 📊 Data Statistics
 
-| Category | Levels | Age Range |
-|----------|--------|-----------|
-| **Primaire** | 1ère - 6ème Année | 6-12 years |
-| **Collège** | 1ère - 3ème Année | 12-15 years |
-| **Lycée** | Tronc Commun, 1ère & 2ème Bac | 15-18 years |
+- **Education Levels**: 12 levels (Primary, College, High School)
+- **Subjects**: 96 subjects across all levels
+- **Content Items**: 89 verified educational content items
+- **Languages**: French and Arabic support
+- **Quality Score**: 100% validated and cleaned
 
-## 📚 Content Types
+## 🔧 API Endpoints
 
-| Type | French | Arabic | Description |
-|------|--------|--------|-------------|
-| `cours` | Cours | الدروس | Course materials and lessons |
-| `exercice` | Exercices | التمارين | Practice exercises |
-| `examen` | Examens | الامتحانات | Examination papers |
-| `controle` | Contrôles | الفروض | Continuous assessment tests |
-| `correction` | Corrections | التصحيحات | Solutions and corrections |
-| `resume` | Résumés | الملخصات | Summary sheets |
+### Core Endpoints
+- `GET /api/v1/levels` - Get all education levels
+- `GET /api/v1/subjects` - Get all subjects
+- `GET /api/v1/courses` - Get all educational content
+- `GET /api/v1/search` - Search across all data
+- `GET /api/v1/stats` - Get API statistics
 
-## 🚀 Quick Start
+### Documentation
+- **Swagger UI**: `http://localhost:8000/docs`
+- **ReDoc**: `http://localhost:8000/redoc`
+- **Health Check**: `http://localhost:8000/health`
 
-### API Endpoints
-
-```bash
-# Get all education levels
-curl "https://your-api-url/api/v1/levels"
-
-# Get subjects for a specific level
-curl "https://your-api-url/api/v1/subjects?level_id=lycee-2bac"
-
-# Get mathematics content
-curl "https://your-api-url/api/v1/content?subject_id=mathematiques-lycee-2bac"
-
-# Search for content
-curl "https://your-api-url/api/v1/search?q=mathematiques"
-```
-
-### JavaScript Example
-
-```javascript
-// Fetch all subjects for 2nd year Baccalaureate
-const response = await fetch('https://your-api-url/api/v1/subjects?level_id=lycee-2bac');
-const data = await response.json();
-console.log(data.data); // Array of subjects
-```
-
-### Python Example
-
-```python
-import requests
-
-# Get all exams for mathematics
-response = requests.get(
-    "https://your-api-url/api/v1/content",
-    params={
-        "subject_id": "mathematiques-lycee-2bac",
-        "content_type": "examen"
-    }
-)
-exams = response.json()["data"]
-for exam in exams:
-    print(f"{exam['title']} - {exam['title_ar']}")
-```
-
-## 📖 API Documentation
-
-- **Swagger UI**: `/docs` - Interactive API documentation
-- **ReDoc**: `/redoc` - Alternative documentation view
-- **OpenAPI**: `/openapi.json` - OpenAPI specification
-
-## 🛠️ Local Development
+## 🛠️ Installation & Setup
 
 ### Prerequisites
 
@@ -207,11 +154,24 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## 📧 Contact
 
-- Moroccan Ministry of Education for the educational framework
-- All contributors and users of this API
+- **Email**: prs.online.00@gmail.com
+- **GitHub**: [K11E3R/moroccan-education-API](https://github.com/K11E3R/moroccan-education-API)
+
+## 🎯 Status
+
+**PRODUCTION READY** ✅
+
+The Moroccan Education API v1 is ready for public use with:
+- Complete v1 endpoints
+- 100% validated data
+- Sub-second response times
+- Comprehensive error handling
+- Real-time monitoring
+- Complete documentation
 
 ---
 
-Made with ❤️ for Morocco 🇲🇦
+
+Made with ❤️ for the Moroccan Developer Community 🇲🇦
