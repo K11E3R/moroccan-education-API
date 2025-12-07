@@ -2,6 +2,7 @@
 
 A comprehensive data collection and API system for Moroccan education data, providing clean, validated educational content for developers and educators.
 
+
 ## 🚀 Features
 
 - **Data Collection**: Automated scraping from Moroccan education websites
@@ -158,5 +159,6 @@ The Moroccan Education API v1 is ready for public use with:
 - Complete documentation
 
 ---
+
 
 Made with ❤️ for the Moroccan Developer Community 🇲🇦
