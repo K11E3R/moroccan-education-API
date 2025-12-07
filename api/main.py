@@ -1,37 +1,94 @@
 #!/usr/bin/env python3
 """
-Moroccan Education Public API v1.0
-Complete v1 API with all endpoints for comprehensive testing
+Moroccan Education Public API v2.0
+Professional API with beautiful documentation
 """
 
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 from typing import Optional, List, Dict, Any
 import json
-import os
-import httpx
-import asyncio
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime
+
+# Custom OpenAPI schema
+def custom_openapi():
+    if app.openapi_schema:
+        return app.openapi_schema
+    
+    from fastapi.openapi.utils import get_openapi
+    
+    openapi_schema = get_openapi(
+        title="🇲🇦 Moroccan Education API",
+        version="2.0.0",
+        description="""
+# Moroccan Education Data API
+
+A comprehensive public API providing access to educational resources for the Moroccan education system.
+
+## Features
+
+- 📚 **12 Education Levels** - From Primary to Baccalaureate
+- 📖 **100+ Subjects** - Mathematics, Sciences, Languages, and more
+- 📝 **1000+ Educational Contents** - Courses, Exercises, Exams
+- 🌐 **Bilingual Support** - French and Arabic
+
+## Content Types
+
+| Type | Description |
+|------|-------------|
+| `cours` | Course materials and lessons |
+| `exercice` | Practice exercises |
+| `examen` | Examination papers |
+| `controle` | Continuous assessment tests |
+| `correction` | Solutions and corrections |
+| `resume` | Summary sheets |
+
+## Rate Limits
+
+- **Free tier**: 1000 requests/day
+- No authentication required for public endpoints
+
+## Support
+
+- 📧 Email: prs.online.00@gmail.com
+- 🐙 GitHub: [moroccan-education-API](https://github.com/K11E3R/moroccan-education-API)
+        """,
+        routes=app.routes,
+        tags=[
+            {"name": "Overview", "description": "API information and health checks"},
+            {"name": "Levels", "description": "Education levels (Primary, Middle, High School)"},
+            {"name": "Subjects", "description": "Academic subjects per level"},
+            {"name": "Content", "description": "Educational content (courses, exercises, exams)"},
+            {"name": "Search", "description": "Search across all resources"},
+            {"name": "Statistics", "description": "API usage and data statistics"},
+        ]
+    )
+    
+    # Custom logo
+    openapi_schema["info"]["x-logo"] = {
+        "url": "/favicon.png",
+        "altText": "Moroccan Education API"
+    }
+    
+    app.openapi_schema = openapi_schema
+    return app.openapi_schema
+
 
 app = FastAPI(
     title="Moroccan Education API",
-    description="Complete public API for Moroccan education data",
-    version="1.0.0",
-    docs_url="/docs",
-    redoc_url="/redoc",
-    contact={
-        "email": "prs.online.00@gmail.com",
-        "url": "https://github.com/K11E3R/moroccan-education-API (private repository)"
-    },
-    license_info={
-        "name": "MIT License",
-        "url": "https://opensource.org/licenses/MIT"
-    }
+    description="Comprehensive API for Moroccan education data",
+    version="2.0.0",
+    docs_url=None,  # Disable default docs
+    redoc_url=None,  # Disable default redoc
 )
 
-# Enable CORS for all origins (public API)
+app.openapi = custom_openapi
+
+# CORS Configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -40,523 +97,1016 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Global variables for data
-education_data = {}
-
-# Railway API configuration
-RAILWAY_API_TOKEN = os.getenv("RAILWAY_API_TOKEN", "")
-RAILWAY_PROJECT_ID = os.getenv("RAILWAY_PROJECT_ID", "")
-RAILWAY_API_BASE = "https://backboard.railway.app/v1"
-
-# Cache for Railway consumption data
-railway_consumption_cache = {
-    "data": None,
-    "last_updated": None,
-    "cache_duration": 300  # 5 minutes
-}
-
-# Simple uptime tracking
-uptime_tracker = {
+# Data storage
+education_data: Dict[str, Any] = {}
+api_stats = {
     "start_time": datetime.now(),
-    "total_requests": 0,
-    "successful_requests": 0
+    "requests": 0,
+    "endpoints_hit": {}
 }
 
-def calculate_real_uptime():
-    """Calculate real-time uptime based on successful requests"""
-    global uptime_tracker
-    
-    if uptime_tracker["total_requests"] == 0:
-        return "100.00%"
-    
-    success_rate = (uptime_tracker["successful_requests"] / uptime_tracker["total_requests"]) * 100
-    return f"{success_rate:.2f}%"
 
-async def get_railway_consumption():
-    """Get Railway consumption data from API"""
-    global railway_consumption_cache, uptime_tracker
-    
-    # Track request
-    uptime_tracker["total_requests"] += 1
-    
-    # Check cache first
-    if (railway_consumption_cache["data"] and 
-        railway_consumption_cache["last_updated"] and 
-        datetime.now() - railway_consumption_cache["last_updated"] < timedelta(seconds=railway_consumption_cache["cache_duration"])):
-        uptime_tracker["successful_requests"] += 1
-        return railway_consumption_cache["data"]
-    
-    if not RAILWAY_API_TOKEN or not RAILWAY_PROJECT_ID:
-        return {
-            "error": "Railway API credentials not configured",
-            "status": "not_configured"
-        }
-    
-    try:
-        async with httpx.AsyncClient() as client:
-            headers = {"Authorization": f"Bearer {RAILWAY_API_TOKEN}"}
-            
-            # Try different Railway API endpoints
-            endpoints_to_try = [
-                f"{RAILWAY_API_BASE}/projects/{RAILWAY_PROJECT_ID}/usage",
-                f"{RAILWAY_API_BASE}/projects/{RAILWAY_PROJECT_ID}",
-                f"https://api.railway.app/v1/projects/{RAILWAY_PROJECT_ID}/usage",
-                f"https://api.railway.app/v1/projects/{RAILWAY_PROJECT_ID}"
-            ]
-            
-            for endpoint in endpoints_to_try:
-                try:
-                    response = await client.get(endpoint, headers=headers, timeout=10.0)
-                    if response.status_code == 200:
-                        data = response.json()
-                        railway_consumption_cache["data"] = data
-                        railway_consumption_cache["last_updated"] = datetime.now()
-                        uptime_tracker["successful_requests"] += 1
-                        return data
-                    elif response.status_code == 401:
-                        return {"error": "Railway API authentication failed - check your token"}
-                    elif response.status_code == 404:
-                        continue  # Try next endpoint
-                    else:
-                        return {"error": f"Railway API error: {response.status_code} - {response.text}"}
-                except Exception as e:
-                    continue  # Try next endpoint
-            
-            # If all endpoints fail, return minimal real data only
-            return {
-                "error": "Railway API endpoints not accessible",
-                "status": "api_unavailable",
-                "message": "Real Railway API data not available - check API credentials and endpoints",
-                "last_attempt": datetime.now().isoformat(),
-                "endpoints_tried": len(endpoints_to_try)
-            }
-                
-    except Exception as e:
-        return {"error": f"Railway API error: {str(e)}"}
-
-async def get_dynamic_hosting_info():
-    """Get dynamic hosting information with real-time uptime"""
-    railway_data = await get_railway_consumption()
-    real_uptime = calculate_real_uptime()
-    
-    # Determine status based on real uptime
-    uptime_percent = float(real_uptime.replace("%", ""))
-    if uptime_percent < 95:
-        status = "degraded"
-    elif uptime_percent < 99:
-        status = "moderate_load"
-    else:
-        status = "operational"
-    
-    # Only show real data - no fake information
-    hosting_info = {
-        "platform": "Railway",
-        "status": status,
-        "uptime": real_uptime,
-        "account_linked": True,
-        "metrics": {
-            "real_uptime": real_uptime,
-            "total_requests": uptime_tracker["total_requests"],
-            "successful_requests": uptime_tracker["successful_requests"],
-            "tracking_since": uptime_tracker["start_time"].isoformat()
-        }
-    }
-    
-    # Only add consumption if Railway API is accessible
-    if "error" not in railway_data:
-        hosting_info["consumption"] = railway_data
-        hosting_info["region"] = railway_data.get("region", "Unknown")
-    else:
-        hosting_info["consumption"] = {
-            "status": "unavailable",
-            "error": railway_data["error"],
-            "message": "Railway API not accessible"
-        }
-        hosting_info["region"] = "Unknown"
-    
-    return hosting_info
-
-def load_data():
-    """Load education data from JSON file"""
+def load_data() -> Dict[str, Any]:
+    """Load education data from JSON"""
     global education_data
     
-    # Try multiple paths for data file
-    possible_paths = [
+    data_paths = [
         Path(__file__).parent / "data.json",
-        Path(__file__).parent.parent / "data" / "cleaned_data_20251023_173829.json",
-        Path(__file__).parent.parent / "data" / "corrected_data_20251023_173332.json"
+        Path(__file__).parent.parent / "data" / "moroccan_education_data_*.json",
+        Path(__file__).parent.parent / "data.json",
     ]
     
-    data_file = None
-    for path in possible_paths:
+    for path in data_paths:
+        if "*" in str(path):
+            import glob
+            matches = sorted(glob.glob(str(path)), reverse=True)
+            if matches:
+                path = Path(matches[0])
+            else:
+                continue
+        
         if path.exists():
-            data_file = path
-            break
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    education_data = json.load(f)
+                print(f"✅ Loaded data from: {path}")
+                print(f"   Levels: {len(education_data.get('levels', []))}")
+                print(f"   Subjects: {len(education_data.get('subjects', []))}")
+                print(f"   Content: {len(education_data.get('content', []))}")
+                return education_data
+            except Exception as e:
+                print(f"❌ Error loading {path}: {e}")
     
-    if not data_file:
-        print("❌ No data file found!")
-        return {
-            "levels": [],
-            "subjects": [],
-            "content": [],
-            "statistics": {"total_levels": 0, "total_subjects": 0, "total_content": 0},
-            "error": "No data file found"
-        }
-    
-    try:
-        with open(data_file, 'r', encoding='utf-8') as f:
-            education_data = json.load(f)
-        
-        print(f"[OK] Loaded data from: {data_file.name}")
-        print(f"[INFO] Data contains: {len(education_data.get('levels', []))} levels, {len(education_data.get('subjects', []))} subjects, {len(education_data.get('content', []))} content items")
-        
-        return education_data
-        
-    except Exception as e:
-        print(f"[ERROR] Error loading data: {e}")
-        return {
-            "levels": [],
-            "subjects": [],
-            "content": [],
-            "statistics": {"total_levels": 0, "total_subjects": 0, "total_content": 0},
-            "error": f"Error loading data: {str(e)}"
-        }
+    print("⚠️ No data file found, using empty dataset")
+    return {"levels": [], "subjects": [], "content": [], "statistics": {}}
+
 
 # Load data on startup
 education_data = load_data()
 
-@app.get("/")
-async def root():
-    """API information and welcome message with dynamic Railway consumption data"""
-    try:
-        stats = education_data.get("statistics", {})
-        
-        # Get comprehensive hosting and monitoring data
-        consumption_data = await get_railway_consumption()
-        real_uptime = calculate_real_uptime()
-        
-        # Calculate real metrics
-        total_requests = uptime_tracker["total_requests"]
-        successful_requests = uptime_tracker["successful_requests"]
-        failed_requests = total_requests - successful_requests
-        success_rate = (successful_requests / max(1, total_requests)) * 100
-        
-        # Calculate request rate
-        duration_minutes = (datetime.now() - uptime_tracker["start_time"]).total_seconds() / 60
-        requests_per_minute = total_requests / max(1, duration_minutes)
-        
-        # Determine health status
-        if success_rate >= 99:
-            health_status = "excellent"
-            health_color = "green"
-        elif success_rate >= 95:
-            health_status = "good"
-            health_color = "yellow"
-        elif success_rate >= 90:
-            health_status = "warning"
-            health_color = "orange"
-        else:
-            health_status = "critical"
-            health_color = "red"
-        
-        # Essential hosting information only
-        hosting_details = {
-            "platform": "Railway",
-            "status": "operational" if success_rate >= 95 else "degraded",
-            "uptime": real_uptime,
-            "region": "Global CDN",
-            "account_linked": True,
-            
-            # Essential performance metrics
-            "performance": {
-                "uptime": real_uptime,
-                "health_status": health_status,
-                "total_requests": total_requests,
-                "success_rate": f"{success_rate:.2f}%",
-                "last_request_time": datetime.now().isoformat()
-            },
-            
-            # Railway API Status
-            "railway_api": {
-                "status": "unavailable" if "error" in consumption_data else "available",
-                "authentication": "configured" if RAILWAY_API_TOKEN else "missing"
-            }
-        }
-        
-        return {
-            "message": "🇲🇦 Moroccan Education Public API - UNDER MAINTENANCE & DATA IMPROVEMENT",
-            "description": "API for Moroccan education data - Currently under maintenance, data cleaning and improvement in progress",
-            "version": "1.0.0",
-            
-            "hosting": hosting_details,
-            
-            "support": {
-                "email": "prs.online.00@gmail.com",
-                "github_issues": "https://github.com/K11E3R/moroccan-education-API/issues",
-                "response_time": "8-12 hours",
-                "documentation": "/docs",
-                "api_status": "/health"
-            },
-            
-            "endpoints": {
-                "levels": "/api/v1/levels",
-                "subjects": "/api/v1/subjects", 
-                "courses": "/api/v1/courses",
-                "stats": "/api/v1/stats",
-                "search": "/api/v1/search"
-            },
-            
-            "docs": "/docs",
-            "status": hosting_details.get("status", "operational"),
-            "data_source": "Moroccan Education Data",
-            "last_update": education_data.get("collection_date", "N/A"),
-            "total_items": stats.get("total_content", len(education_data.get("content", []))),
-            "levels_count": stats.get("total_levels", len(education_data.get("levels", []))),
-            "subjects_count": stats.get("total_subjects", len(education_data.get("subjects", []))),
-            "github": "https://github.com/K11E3R/moroccan-education-API",
-            "email": "prs.online.00@gmail.com",
-            "license": "MIT License",
-            "project_status": "Under Maintenance - Data Cleaning & Improvement"
-        }
-    except Exception as e:
-        return JSONResponse(
-            status_code=500,
-            content={"error": f"Internal server error: {str(e)}"}
-        )
 
-@app.get("/api/v1/levels")
+# Landing page HTML
+LANDING_PAGE = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇲🇦 Moroccan Education API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-primary: #c41e3a;
+            --accent-secondary: #006233;
+            --accent-gold: #c5a572;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --border-color: #2a2a3a;
+            --gradient-morocco: linear-gradient(135deg, #c41e3a 0%, #006233 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.03;
+            background-image: 
+                linear-gradient(30deg, var(--accent-primary) 12%, transparent 12.5%, transparent 87%, var(--accent-primary) 87.5%, var(--accent-primary)),
+                linear-gradient(150deg, var(--accent-primary) 12%, transparent 12.5%, transparent 87%, var(--accent-primary) 87.5%, var(--accent-primary)),
+                linear-gradient(30deg, var(--accent-primary) 12%, transparent 12.5%, transparent 87%, var(--accent-primary) 87.5%, var(--accent-primary)),
+                linear-gradient(150deg, var(--accent-primary) 12%, transparent 12.5%, transparent 87%, var(--accent-primary) 87.5%, var(--accent-primary)),
+                linear-gradient(60deg, var(--accent-secondary) 25%, transparent 25.5%, transparent 75%, var(--accent-secondary) 75%, var(--accent-secondary)),
+                linear-gradient(60deg, var(--accent-secondary) 25%, transparent 25.5%, transparent 75%, var(--accent-secondary) 75%, var(--accent-secondary));
+            background-size: 80px 140px;
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+            animation: patternMove 20s linear infinite;
+        }
+        
+        @keyframes patternMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-140px); }
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: var(--gradient-morocco);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .version-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--accent-gold);
+            border-radius: 50px;
+            color: var(--accent-gold);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-morocco);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 20px 40px rgba(196, 30, 58, 0.1);
+        }
+        
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-morocco);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+        
+        /* Endpoints Section */
+        .endpoints-section {
+            margin: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .section-title .material-icons {
+            color: var(--accent-primary);
+        }
+        
+        .endpoints-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .endpoint-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .endpoint-card:hover {
+            border-color: var(--accent-secondary);
+        }
+        
+        .endpoint-method {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #10b981;
+            color: white;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .endpoint-path {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-gold);
+            margin: 0.75rem 0;
+            font-size: 1rem;
+        }
+        
+        .endpoint-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Quick Start */
+        .quickstart {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .code-block {
+            background: var(--bg-primary);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+            position: relative;
+        }
+        
+        .code-block code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: #e0e0e0;
+        }
+        
+        .code-block .comment { color: #6a9955; }
+        .code-block .keyword { color: #569cd6; }
+        .code-block .string { color: #ce9178; }
+        .code-block .function { color: #dcdcaa; }
+        
+        .copy-btn {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+        
+        .copy-btn:hover {
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+        }
+        
+        /* CTA Buttons */
+        .cta-section {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-morocco);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--accent-secondary);
+            color: var(--accent-secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--accent-secondary);
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .endpoints-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Live indicator */
+        .live-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid #10b981;
+            border-radius: 50px;
+            color: #10b981;
+            font-size: 0.85rem;
+            margin-left: 1rem;
+        }
+        
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">🇲🇦</div>
+            <h1>Moroccan Education API</h1>
+            <p class="subtitle">
+                A comprehensive public API providing access to educational resources 
+                for the entire Moroccan education system - from Primary to Baccalaureate
+            </p>
+            <span class="version-badge">v2.0.0</span>
+            <span class="live-indicator">
+                <span class="live-dot"></span>
+                API Online
+            </span>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="material-icons stat-icon">school</span>
+                <div class="stat-value" id="levels-count">{{LEVELS_COUNT}}</div>
+                <div class="stat-label">Education Levels</div>
+            </div>
+            <div class="stat-card">
+                <span class="material-icons stat-icon">menu_book</span>
+                <div class="stat-value" id="subjects-count">{{SUBJECTS_COUNT}}</div>
+                <div class="stat-label">Subjects</div>
+            </div>
+            <div class="stat-card">
+                <span class="material-icons stat-icon">description</span>
+                <div class="stat-value" id="content-count">{{CONTENT_COUNT}}</div>
+                <div class="stat-label">Educational Contents</div>
+            </div>
+            <div class="stat-card">
+                <span class="material-icons stat-icon">language</span>
+                <div class="stat-value">2</div>
+                <div class="stat-label">Languages (FR/AR)</div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <a href="/docs" class="btn btn-primary">
+                <span class="material-icons">api</span>
+                Interactive Docs
+            </a>
+            <a href="/redoc" class="btn btn-secondary">
+                <span class="material-icons">description</span>
+                API Reference
+            </a>
+        </div>
+        
+        <section class="endpoints-section">
+            <h2 class="section-title">
+                <span class="material-icons">bolt</span>
+                Quick Endpoints
+            </h2>
+            
+            <div class="endpoints-grid">
+                <div class="endpoint-card">
+                    <span class="endpoint-method">GET</span>
+                    <div class="endpoint-path">/api/v1/levels</div>
+                    <p class="endpoint-desc">Get all education levels (Primary, Middle School, High School)</p>
+                </div>
+                <div class="endpoint-card">
+                    <span class="endpoint-method">GET</span>
+                    <div class="endpoint-path">/api/v1/subjects</div>
+                    <p class="endpoint-desc">Get all subjects with optional level filtering</p>
+                </div>
+                <div class="endpoint-card">
+                    <span class="endpoint-method">GET</span>
+                    <div class="endpoint-path">/api/v1/content</div>
+                    <p class="endpoint-desc">Get educational content (courses, exercises, exams)</p>
+                </div>
+                <div class="endpoint-card">
+                    <span class="endpoint-method">GET</span>
+                    <div class="endpoint-path">/api/v1/search?q={query}</div>
+                    <p class="endpoint-desc">Search across all educational resources</p>
+                </div>
+                <div class="endpoint-card">
+                    <span class="endpoint-method">GET</span>
+                    <div class="endpoint-path">/api/v1/stats</div>
+                    <p class="endpoint-desc">Get API statistics and metadata</p>
+                </div>
+                <div class="endpoint-card">
+                    <span class="endpoint-method">GET</span>
+                    <div class="endpoint-path">/health</div>
+                    <p class="endpoint-desc">API health check endpoint</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="quickstart">
+            <h2 class="section-title">
+                <span class="material-icons">code</span>
+                Quick Start
+            </h2>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                </button>
+                <code><span class="comment"># Fetch all education levels</span>
+<span class="keyword">curl</span> <span class="string">"{{BASE_URL}}/api/v1/levels"</span>
+
+<span class="comment"># Get subjects for a specific level</span>
+<span class="keyword">curl</span> <span class="string">"{{BASE_URL}}/api/v1/subjects?level_id=lycee-2bac"</span>
+
+<span class="comment"># Search for mathematics content</span>
+<span class="keyword">curl</span> <span class="string">"{{BASE_URL}}/api/v1/search?q=mathematiques"</span></code>
+            </div>
+            
+            <h3 style="margin-top: 2rem; color: var(--text-secondary);">JavaScript Example</h3>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                </button>
+                <code><span class="comment">// Fetch mathematics courses for Baccalaureate</span>
+<span class="keyword">const</span> response = <span class="keyword">await</span> <span class="function">fetch</span>(<span class="string">'{{BASE_URL}}/api/v1/content?subject_id=mathematiques-lycee-2bac'</span>);
+<span class="keyword">const</span> data = <span class="keyword">await</span> response.<span class="function">json</span>();
+console.<span class="function">log</span>(data.data); <span class="comment">// Array of educational content</span></code>
+            </div>
+            
+            <h3 style="margin-top: 2rem; color: var(--text-secondary);">Python Example</h3>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <span class="function">import</span> requests
+
+<span class="comment"># Get all subjects for middle school</span>
+response = requests.get(<span class="string">"{{BASE_URL}}/api/v1/subjects"</span>, params={<span class="string">"level_id"</span>: <span class="string">"college-3"</span>})
+subjects = response.json()[<span class="string">"data"</span>]
+
+<span class="keyword">for</span> subject <span class="keyword">in</span> subjects:
+    print(f<span class="string">"{subject['name']} - {subject['name_ar']}"</span>)</code>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-links">
+                <a href="https://github.com/K11E3R/moroccan-education-API" target="_blank">
+                    <span class="material-icons">code</span>
+                    GitHub
+                </a>
+                <a href="mailto:prs.online.00@gmail.com">
+                    <span class="material-icons">email</span>
+                    Contact
+                </a>
+                <a href="/docs">
+                    <span class="material-icons">api</span>
+                    API Docs
+                </a>
+            </div>
+            <p class="copyright">
+                © 2025 Moroccan Education API • MIT License • Made with ❤️ for Morocco
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        function copyCode(btn) {
+            const codeBlock = btn.parentElement.querySelector('code');
+            const text = codeBlock.textContent;
+            navigator.clipboard.writeText(text);
+            btn.innerHTML = '<span class="material-icons">check</span>';
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-icons">content_copy</span>';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
+"""
+
+
+# Custom Swagger UI
+@app.get("/docs", include_in_schema=False)
+async def custom_swagger_ui():
+    return get_swagger_ui_html(
+        openapi_url="/openapi.json",
+        title="Moroccan Education API - Docs",
+        swagger_favicon_url="/favicon.png",
+        swagger_ui_parameters={
+            "deepLinking": True,
+            "displayRequestDuration": True,
+            "docExpansion": "list",
+            "operationsSorter": "alpha",
+            "filter": True,
+            "tagsSorter": "alpha",
+            "syntaxHighlight.theme": "monokai",
+        }
+    )
+
+
+@app.get("/redoc", include_in_schema=False)
+async def custom_redoc():
+    return get_redoc_html(
+        openapi_url="/openapi.json",
+        title="Moroccan Education API - Reference",
+        redoc_favicon_url="/favicon.png",
+    )
+
+
+@app.get("/", response_class=HTMLResponse, tags=["Overview"])
+async def root(request: Request):
+    """
+    Landing page with API overview and documentation links.
+    """
+    stats = education_data.get("statistics", {})
+    
+    html = LANDING_PAGE.replace("{{LEVELS_COUNT}}", str(stats.get("total_levels", len(education_data.get("levels", [])))))
+    html = html.replace("{{SUBJECTS_COUNT}}", str(stats.get("total_subjects", len(education_data.get("subjects", [])))))
+    html = html.replace("{{CONTENT_COUNT}}", str(stats.get("total_content", len(education_data.get("content", [])))))
+    
+    # Get base URL
+    base_url = str(request.base_url).rstrip("/")
+    html = html.replace("{{BASE_URL}}", base_url)
+    
+    return HTMLResponse(content=html)
+
+
+@app.get("/api", tags=["Overview"])
+async def api_info():
+    """
+    API information and available endpoints.
+    """
+    return {
+        "name": "Moroccan Education API",
+        "version": "2.0.0",
+        "description": "Comprehensive API for Moroccan education data",
+        "endpoints": {
+            "levels": "/api/v1/levels",
+            "subjects": "/api/v1/subjects",
+            "content": "/api/v1/content",
+            "search": "/api/v1/search",
+            "stats": "/api/v1/stats",
+        },
+        "documentation": {
+            "swagger": "/docs",
+            "redoc": "/redoc",
+            "openapi": "/openapi.json"
+        }
+    }
+
+
+@app.get("/health", tags=["Overview"])
+async def health_check():
+    """
+    Health check endpoint for monitoring.
+    """
+    levels_count = len(education_data.get("levels", []))
+    subjects_count = len(education_data.get("subjects", []))
+    content_count = len(education_data.get("content", []))
+    
+    return {
+        "status": "healthy" if levels_count > 0 else "degraded",
+        "timestamp": datetime.now().isoformat(),
+        "data_loaded": levels_count > 0,
+        "counts": {
+            "levels": levels_count,
+            "subjects": subjects_count,
+            "content": content_count
+        },
+        "uptime_seconds": (datetime.now() - api_stats["start_time"]).total_seconds(),
+        "version": "2.0.0"
+    }
+
+
+# ==================== LEVELS ENDPOINTS ====================
+
+@app.get("/api/v1/levels", tags=["Levels"])
 async def get_levels(
-    language: Optional[str] = Query(None, description="Filter by language (fr/ar)"),
-    limit: Optional[int] = Query(None, description="Limit results")
+    category: Optional[str] = Query(None, description="Filter by category (primaire/college/lycee)"),
+    limit: Optional[int] = Query(None, ge=1, le=100, description="Limit results"),
+    offset: Optional[int] = Query(0, ge=0, description="Offset for pagination")
 ):
-    """Get all education levels"""
-    try:
-        levels = education_data.get("levels", [])
-        
-        if limit:
-            levels = levels[:limit]
-        
-        return {
-            "success": True,
-            "count": len(levels),
-            "data": levels
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error retrieving levels: {str(e)}")
+    """
+    Get all education levels.
+    
+    Returns the complete list of Moroccan education levels from Primary (Primaire)
+    through Middle School (Collège) to High School (Lycée/Baccalaureate).
+    """
+    levels = education_data.get("levels", [])
+    
+    if category:
+        levels = [l for l in levels if l.get("category") == category]
+    
+    total = len(levels)
+    levels = levels[offset:]
+    
+    if limit:
+        levels = levels[:limit]
+    
+    return {
+        "success": True,
+        "count": len(levels),
+        "total": total,
+        "data": levels
+    }
 
-@app.get("/api/v1/levels/{level_id}")
+
+@app.get("/api/v1/levels/{level_id}", tags=["Levels"])
 async def get_level(level_id: str):
-    """Get specific level by ID"""
-    try:
-        levels = education_data.get("levels", [])
-        level = next((l for l in levels if l["id"] == level_id), None)
-        
-        if not level:
-            raise HTTPException(status_code=404, detail="Level not found")
-        
-        return {
-            "success": True,
-            "data": level
+    """
+    Get a specific education level by ID.
+    
+    Example IDs: primaire-1, college-3, lycee-2bac
+    """
+    levels = education_data.get("levels", [])
+    level = next((l for l in levels if l["id"] == level_id), None)
+    
+    if not level:
+        raise HTTPException(status_code=404, detail=f"Level '{level_id}' not found")
+    
+    # Get subject count for this level
+    subjects = [s for s in education_data.get("subjects", []) if s.get("level_id") == level_id]
+    content = [c for c in education_data.get("content", []) if c.get("level_id") == level_id]
+    
+    return {
+        "success": True,
+        "data": {
+            **level,
+            "subjects_count": len(subjects),
+            "content_count": len(content)
         }
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error retrieving level: {str(e)}")
+    }
 
-@app.get("/api/v1/subjects")
+
+# ==================== SUBJECTS ENDPOINTS ====================
+
+@app.get("/api/v1/subjects", tags=["Subjects"])
 async def get_subjects(
     level_id: Optional[str] = Query(None, description="Filter by level ID"),
-    language: Optional[str] = Query(None, description="Filter by language (fr/ar)"),
-    limit: Optional[int] = Query(None, description="Limit results")
+    limit: Optional[int] = Query(None, ge=1, le=200, description="Limit results"),
+    offset: Optional[int] = Query(0, ge=0, description="Offset for pagination")
 ):
-    """Get all subjects"""
-    try:
-        subjects = education_data.get("subjects", [])
-        
-        # Filter by level
-        if level_id:
-            subjects = [s for s in subjects if s.get("level_id") == level_id]
-        
-        if limit:
-            subjects = subjects[:limit]
-        
-        return {
-            "success": True,
-            "count": len(subjects),
-            "data": subjects
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error retrieving subjects: {str(e)}")
+    """
+    Get all subjects with optional filtering.
+    
+    Subjects include Mathematics, French, Arabic, Physics, SVT, etc.
+    """
+    subjects = education_data.get("subjects", [])
+    
+    if level_id:
+        subjects = [s for s in subjects if s.get("level_id") == level_id]
+    
+    total = len(subjects)
+    subjects = subjects[offset:]
+    
+    if limit:
+        subjects = subjects[:limit]
+    
+    return {
+        "success": True,
+        "count": len(subjects),
+        "total": total,
+        "data": subjects
+    }
 
-@app.get("/api/v1/subjects/{subject_id}")
+
+@app.get("/api/v1/subjects/{subject_id}", tags=["Subjects"])
 async def get_subject(subject_id: str):
-    """Get specific subject by ID"""
-    try:
-        subjects = education_data.get("subjects", [])
-        subject = next((s for s in subjects if s["id"] == subject_id), None)
-        
-        if not subject:
-            raise HTTPException(status_code=404, detail="Subject not found")
-        
-        return {
-            "success": True,
-            "data": subject
+    """
+    Get a specific subject by ID.
+    
+    Example ID: mathematiques-lycee-2bac
+    """
+    subjects = education_data.get("subjects", [])
+    subject = next((s for s in subjects if s["id"] == subject_id), None)
+    
+    if not subject:
+        raise HTTPException(status_code=404, detail=f"Subject '{subject_id}' not found")
+    
+    # Get content for this subject
+    content = [c for c in education_data.get("content", []) if c.get("subject_id") == subject_id]
+    content_types = {}
+    for c in content:
+        ctype = c.get("content_type", "other")
+        content_types[ctype] = content_types.get(ctype, 0) + 1
+    
+    return {
+        "success": True,
+        "data": {
+            **subject,
+            "content_count": len(content),
+            "content_types": content_types
         }
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error retrieving subject: {str(e)}")
+    }
 
-@app.get("/api/v1/courses")
-async def get_courses(
+
+# ==================== CONTENT ENDPOINTS ====================
+
+@app.get("/api/v1/content", tags=["Content"])
+async def get_content(
     level_id: Optional[str] = Query(None, description="Filter by level ID"),
     subject_id: Optional[str] = Query(None, description="Filter by subject ID"),
-    content_type: Optional[str] = Query(None, description="Filter by type (course/exercise/exam)"),
-    limit: Optional[int] = Query(None, description="Limit results")
+    content_type: Optional[str] = Query(None, description="Filter by type (cours/exercice/examen/controle/correction/resume)"),
+    difficulty: Optional[str] = Query(None, description="Filter by difficulty (easy/medium/hard)"),
+    limit: Optional[int] = Query(50, ge=1, le=500, description="Limit results"),
+    offset: Optional[int] = Query(0, ge=0, description="Offset for pagination")
 ):
-    """Get all courses and educational content"""
-    try:
-        courses = education_data.get("content", education_data.get("courses", []))
-        
-        # Filter by level
-        if level_id:
-            courses = [c for c in courses if c.get("level_id") == level_id]
-        
-        # Filter by subject
-        if subject_id:
-            courses = [c for c in courses if c.get("subject_id") == subject_id]
-        
-        # Filter by content type
-        if content_type:
-            courses = [c for c in courses if c.get("content_type") == content_type]
-        
-        if limit:
-            courses = courses[:limit]
-        
-        return {
-            "success": True,
-            "count": len(courses),
-            "data": courses
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error retrieving courses: {str(e)}")
+    """
+    Get educational content with flexible filtering.
+    
+    Content types:
+    - **cours**: Course materials and lessons
+    - **exercice**: Practice exercises
+    - **examen**: Examination papers
+    - **controle**: Continuous assessment tests
+    - **correction**: Solutions and corrections
+    - **resume**: Summary sheets
+    """
+    content = education_data.get("content", [])
+    
+    if level_id:
+        content = [c for c in content if c.get("level_id") == level_id]
+    
+    if subject_id:
+        content = [c for c in content if c.get("subject_id") == subject_id]
+    
+    if content_type:
+        content = [c for c in content if c.get("content_type") == content_type]
+    
+    if difficulty:
+        content = [c for c in content if c.get("difficulty") == difficulty]
+    
+    total = len(content)
+    content = content[offset:offset + limit]
+    
+    return {
+        "success": True,
+        "count": len(content),
+        "total": total,
+        "limit": limit,
+        "offset": offset,
+        "data": content
+    }
 
-@app.get("/api/v1/search")
+
+@app.get("/api/v1/content/{content_id}", tags=["Content"])
+async def get_content_item(content_id: str):
+    """
+    Get a specific content item by ID.
+    """
+    content = education_data.get("content", [])
+    item = next((c for c in content if c["id"] == content_id), None)
+    
+    if not item:
+        raise HTTPException(status_code=404, detail=f"Content '{content_id}' not found")
+    
+    return {
+        "success": True,
+        "data": item
+    }
+
+
+# Legacy endpoint for compatibility
+@app.get("/api/v1/courses", tags=["Content"], include_in_schema=False)
+async def get_courses_legacy(
+    level_id: Optional[str] = None,
+    subject_id: Optional[str] = None,
+    content_type: Optional[str] = None,
+    limit: Optional[int] = 50
+):
+    """Legacy endpoint - redirects to /api/v1/content"""
+    return await get_content(level_id, subject_id, content_type, None, limit, 0)
+
+
+# ==================== SEARCH ENDPOINT ====================
+
+@app.get("/api/v1/search", tags=["Search"])
 async def search(
-    q: str = Query(..., description="Search query"),
-    type: Optional[str] = Query(None, description="Search in (levels/subjects/courses/all)"),
-    language: Optional[str] = Query("fr", description="Search language (fr/ar)")
+    q: str = Query(..., min_length=2, description="Search query (min 2 characters)"),
+    type: Optional[str] = Query(None, description="Search in specific type (levels/subjects/content/all)"),
+    language: Optional[str] = Query("fr", description="Search language (fr/ar)"),
+    limit: Optional[int] = Query(50, ge=1, le=200, description="Limit results per category")
 ):
-    """Search across all education data"""
-    try:
-        q_lower = q.lower()
-        results = {
-            "levels": [],
-            "subjects": [],
-            "courses": []
-        }
-        
-        # Search levels
-        if not type or type in ["levels", "all"]:
-            for level in education_data.get("levels", []):
-                name_field = "name" if language == "fr" else "name_ar"
-                if q_lower in level.get(name_field, "").lower() or q_lower in level.get("id", "").lower():
-                    results["levels"].append(level)
-        
-        # Search subjects
-        if not type or type in ["subjects", "all"]:
-            for subject in education_data.get("subjects", []):
-                name_field = "name" if language == "fr" else "name_ar"
-                if q_lower in subject.get(name_field, "").lower() or q_lower in subject.get("id", "").lower():
-                    results["subjects"].append(subject)
-        
-        # Search courses
-        if not type or type in ["courses", "all"]:
-            for course in education_data.get("content", education_data.get("courses", [])):
-                title_field = "title" if language == "fr" else "title_ar"
-                if q_lower in course.get(title_field, "").lower():
-                    results["courses"].append(course)
-        
-        total = len(results["levels"]) + len(results["subjects"]) + len(results["courses"])
-        
-        return {
-            "success": True,
-            "query": q,
-            "total_results": total,
-            "results": results
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error searching: {str(e)}")
+    """
+    Search across all educational resources.
+    
+    Searches in titles, descriptions, and names in both French and Arabic.
+    """
+    q_lower = q.lower()
+    results = {
+        "levels": [],
+        "subjects": [],
+        "content": []
+    }
+    
+    # Search levels
+    if not type or type in ["levels", "all"]:
+        for level in education_data.get("levels", []):
+            searchable = f"{level.get('name', '')} {level.get('name_ar', '')} {level.get('id', '')}".lower()
+            if q_lower in searchable:
+                results["levels"].append(level)
+    
+    # Search subjects
+    if not type or type in ["subjects", "all"]:
+        for subject in education_data.get("subjects", []):
+            searchable = f"{subject.get('name', '')} {subject.get('name_ar', '')} {subject.get('id', '')}".lower()
+            if q_lower in searchable:
+                results["subjects"].append(subject)
+    
+    # Search content
+    if not type or type in ["content", "all"]:
+        for content in education_data.get("content", []):
+            searchable = f"{content.get('title', '')} {content.get('title_ar', '')} {content.get('description', '')}".lower()
+            if q_lower in searchable:
+                results["content"].append(content)
+    
+    # Apply limits
+    results["levels"] = results["levels"][:limit]
+    results["subjects"] = results["subjects"][:limit]
+    results["content"] = results["content"][:limit]
+    
+    total = len(results["levels"]) + len(results["subjects"]) + len(results["content"])
+    
+    return {
+        "success": True,
+        "query": q,
+        "total_results": total,
+        "results": results
+    }
 
-@app.get("/api/v1/stats")
+
+# ==================== STATISTICS ENDPOINT ====================
+
+@app.get("/api/v1/stats", tags=["Statistics"])
 async def get_stats():
-    """Get API statistics and metadata"""
-    try:
-        stats = education_data.get("statistics", {})
-        levels_count = len(education_data.get("levels", []))
-        subjects_count = len(education_data.get("subjects", []))
-        courses_count = len(education_data.get("content", []))
-        
-        return {
-            "success": True,
-            "data": {
-                "total_items": stats.get("total_content", courses_count),
-                "levels_count": stats.get("total_levels", levels_count),
-                "subjects_count": stats.get("total_subjects", subjects_count),
-                "courses_count": stats.get("total_content", courses_count),
-                "content_count": stats.get("total_content", courses_count),
-                "languages": ["fr", "ar"],
-                "last_update": education_data.get("collection_date", "N/A"),
-                "data_source": "Moroccan Education Data",
-                "api_version": "1.0.0",
-                "status": "operational"
-            }
+    """
+    Get comprehensive API statistics and metadata.
+    """
+    stats = education_data.get("statistics", {})
+    
+    # Calculate content type distribution
+    content_types = {}
+    for c in education_data.get("content", []):
+        ctype = c.get("content_type", "other")
+        content_types[ctype] = content_types.get(ctype, 0) + 1
+    
+    # Calculate level distribution
+    level_distribution = {}
+    for c in education_data.get("content", []):
+        level_id = c.get("level_id", "unknown")
+        level_distribution[level_id] = level_distribution.get(level_id, 0) + 1
+    
+    return {
+        "success": True,
+        "data": {
+            "total_levels": stats.get("total_levels", len(education_data.get("levels", []))),
+            "total_subjects": stats.get("total_subjects", len(education_data.get("subjects", []))),
+            "total_content": stats.get("total_content", len(education_data.get("content", []))),
+            "content_types": content_types,
+            "level_distribution": level_distribution,
+            "languages": ["fr", "ar"],
+            "collection_date": education_data.get("collection_date", "N/A"),
+            "api_version": "2.0.0",
+            "data_source": "Moroccan Education Websites"
         }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error retrieving stats: {str(e)}")
+    }
 
-@app.get("/health")
-async def health_check():
-    """Health check endpoint"""
-    try:
-        levels_count = len(education_data.get("levels", []))
-        subjects_count = len(education_data.get("subjects", []))
-        content_count = len(education_data.get("content", []))
-        
-        health_status = "healthy"
-        issues = []
-        
-        if not education_data or education_data.get("error"):
-            health_status = "unhealthy"
-            issues.append("Data not loaded")
-        
-        if levels_count == 0:
-            health_status = "degraded"
-            issues.append("No levels found")
-        
-        if subjects_count == 0:
-            health_status = "degraded"
-            issues.append("No subjects found")
-        
-        return {
-            "status": health_status,
-            "timestamp": datetime.now().isoformat(),
-            "data_loaded": levels_count > 0,
-            "levels_count": levels_count,
-            "subjects_count": subjects_count,
-            "content_count": content_count,
-            "issues": issues,
-            "api_version": "1.0.0"
-        }
-    except Exception as e:
-        return JSONResponse(
-            status_code=500,
-            content={
-                "status": "unhealthy",
-                "error": str(e),
-                "timestamp": datetime.now().isoformat()
-            }
-        )
+
+# ==================== FAVICON ====================
+
+@app.get("/favicon.png", include_in_schema=False)
+async def favicon():
+    """Serve favicon"""
+    favicon_path = Path(__file__).parent / "favicon.png"
+    if favicon_path.exists():
+        from fastapi.responses import FileResponse
+        return FileResponse(favicon_path)
+    raise HTTPException(status_code=404)
+
 
 if __name__ == "__main__":
     import uvicorn

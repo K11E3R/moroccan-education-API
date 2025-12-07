@@ -1,162 +1,217 @@
-# 🇲🇦 Moroccan Education Data Collector & API
+# 🇲🇦 Moroccan Education API
 
-A comprehensive data collection and API system for Moroccan education data, providing clean, validated educational content for developers and educators.
+A comprehensive public API providing access to educational resources for the Moroccan education system.
 
-## 🚀 Features
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com)
 
-- **Data Collection**: Automated scraping from Moroccan education websites
-- **Data Validation**: Comprehensive validation and quality monitoring
-- **Data Cleaning**: Removal of broken links and unnecessary content
-- **REST API**: Complete v1 API with all endpoints
-- **Quality Assurance**: 100% validated data with quality reports
+## ✨ Features
 
-## 📊 Data Statistics
+- 📚 **12 Education Levels** - From Primary School to Baccalaureate
+- 📖 **117 Subjects** - Mathematics, Sciences, Languages, and more
+- 📝 **2000+ Educational Contents** - Courses, Exercises, Exams, Corrections
+- 🌐 **Bilingual Support** - French and Arabic
+- 🔍 **Powerful Search** - Search across all resources
+- 📊 **Rich Statistics** - Detailed API analytics
 
-- **Education Levels**: 12 levels (Primary, College, High School)
-- **Subjects**: 96 subjects across all levels
-- **Content Items**: 89 verified educational content items
-- **Languages**: French and Arabic support
-- **Quality Score**: 100% validated and cleaned
+## 🎓 Education Levels
 
-## 🔧 API Endpoints
+| Category | Levels | Age Range |
+|----------|--------|-----------|
+| **Primaire** | 1ère - 6ème Année | 6-12 years |
+| **Collège** | 1ère - 3ème Année | 12-15 years |
+| **Lycée** | Tronc Commun, 1ère & 2ème Bac | 15-18 years |
 
-### Core Endpoints
-- `GET /api/v1/levels` - Get all education levels
-- `GET /api/v1/subjects` - Get all subjects
-- `GET /api/v1/courses` - Get all educational content
-- `GET /api/v1/search` - Search across all data
-- `GET /api/v1/stats` - Get API statistics
+## 📚 Content Types
 
-### Documentation
-- **Swagger UI**: `http://localhost:8000/docs`
-- **ReDoc**: `http://localhost:8000/redoc`
-- **Health Check**: `http://localhost:8000/health`
+| Type | French | Arabic | Description |
+|------|--------|--------|-------------|
+| `cours` | Cours | الدروس | Course materials and lessons |
+| `exercice` | Exercices | التمارين | Practice exercises |
+| `examen` | Examens | الامتحانات | Examination papers |
+| `controle` | Contrôles | الفروض | Continuous assessment tests |
+| `correction` | Corrections | التصحيحات | Solutions and corrections |
+| `resume` | Résumés | الملخصات | Summary sheets |
 
-## 🛠️ Installation & Setup
+## 🚀 Quick Start
+
+### API Endpoints
+
+```bash
+# Get all education levels
+curl "https://your-api-url/api/v1/levels"
+
+# Get subjects for a specific level
+curl "https://your-api-url/api/v1/subjects?level_id=lycee-2bac"
+
+# Get mathematics content
+curl "https://your-api-url/api/v1/content?subject_id=mathematiques-lycee-2bac"
+
+# Search for content
+curl "https://your-api-url/api/v1/search?q=mathematiques"
+```
+
+### JavaScript Example
+
+```javascript
+// Fetch all subjects for 2nd year Baccalaureate
+const response = await fetch('https://your-api-url/api/v1/subjects?level_id=lycee-2bac');
+const data = await response.json();
+console.log(data.data); // Array of subjects
+```
+
+### Python Example
+
+```python
+import requests
+
+# Get all exams for mathematics
+response = requests.get(
+    "https://your-api-url/api/v1/content",
+    params={
+        "subject_id": "mathematiques-lycee-2bac",
+        "content_type": "examen"
+    }
+)
+exams = response.json()["data"]
+for exam in exams:
+    print(f"{exam['title']} - {exam['title_ar']}")
+```
+
+## 📖 API Documentation
+
+- **Swagger UI**: `/docs` - Interactive API documentation
+- **ReDoc**: `/redoc` - Alternative documentation view
+- **OpenAPI**: `/openapi.json` - OpenAPI specification
+
+## 🛠️ Local Development
 
 ### Prerequisites
-- Python 3.7+
+
+- Python 3.10+
 - pip
 
 ### Installation
+
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd moroccan-education-data-collector
+git clone https://github.com/K11E3R/moroccan-education-API.git
+cd moroccan-education-API
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
 
+# Generate data (optional - data is included)
+python collectors/generate_quality_data.py
+
 # Run the API
 cd api
-python main_v1.py
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-The API will be available at `http://localhost:8000`
-
-## 📁 Project Structure
+### Project Structure
 
 ```
 moroccan-education-data-collector/
-├── api/                    # API implementation
-│   ├── main_v1.py         # Main v1 API
-│   ├── main_robust.py     # Robust API version
-│   ├── data.json          # Cleaned data
-│   └── requirements.txt   # API dependencies
-├── collectors/            # Data collection modules
-│   ├── simple_collector.py
-│   ├── data_validator.py
-│   ├── manual_data_corrector.py
-│   └── quality_monitor.py
-├── data/                  # Data storage
-│   └── cleaned/           # Cleaned data files
-├── config/                # Configuration files
-├── docs/                  # Documentation
-└── run_comprehensive_pipeline.py  # Main pipeline
+├── api/
+│   ├── main.py          # FastAPI application
+│   ├── data.json        # Education data
+│   └── requirements.txt
+├── collectors/
+│   ├── moroccan_edu_scraper.py      # Web scraper
+│   └── generate_quality_data.py     # Data generator
+├── data/
+│   └── moroccan_education_data.json
+├── Dockerfile
+├── railway.toml
+├── Procfile
+└── requirements.txt
 ```
 
-## 🔄 Data Pipeline
+## 🚢 Deployment
 
-The system uses a comprehensive data pipeline:
+### Railway (Recommended)
 
-1. **Collection**: Scrape data from education websites
-2. **Validation**: Validate data structure and completeness
-3. **Correction**: Fix missing levels and subjects
-4. **Cleaning**: Remove broken links and unnecessary content
-5. **Quality Monitoring**: Generate quality reports
-6. **API Serving**: Serve clean data via REST API
+1. Fork this repository
+2. Create a new project on [Railway](https://railway.app)
+3. Connect your GitHub repository
+4. Deploy!
 
-## 🧪 Testing
+### Docker
 
-The API has been thoroughly tested with:
-- **56 test cases** covering all endpoints
-- **85.7% success rate** on comprehensive testing
-- **Sub-second response times** (< 0.01s average)
-- **100% performance success rate**
-
-## 📈 API Performance
-
-- **Response Time**: < 0.01 seconds average
-- **Success Rate**: 85.7% on comprehensive tests
-- **Core Endpoints**: 100% success rate
-- **Data Quality**: 100% validated and cleaned
-
-## 🌐 Usage Examples
-
-### Get all education levels
 ```bash
-curl http://localhost:8000/api/v1/levels
+# Build the image
+docker build -t moroccan-education-api .
+
+# Run the container
+docker run -p 8000:8000 moroccan-education-api
 ```
 
-### Get subjects for specific level
+### Heroku
+
 ```bash
-curl http://localhost:8000/api/v1/subjects?level_id=primaire-1
+heroku create your-app-name
+git push heroku main
 ```
 
-### Search for content
-```bash
-curl http://localhost:8000/api/v1/search?q=mathématiques
+## 📊 API Response Format
+
+All endpoints return responses in this format:
+
+```json
+{
+  "success": true,
+  "count": 10,
+  "total": 100,
+  "data": [...]
+}
 ```
 
-### Get API statistics
-```bash
-curl http://localhost:8000/api/v1/stats
-```
+## 🔗 Endpoints Reference
 
-## 🔒 Data Quality
-
-All data has been:
-- ✅ **Validated**: Structure and completeness verified
-- ✅ **Cleaned**: Broken links and unnecessary content removed
-- ✅ **Corrected**: Missing levels and subjects added
-- ✅ **Monitored**: Quality reports generated
-- ✅ **Verified**: 100% accuracy for public use
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Landing page with API overview |
+| GET | `/api/v1/levels` | Get all education levels |
+| GET | `/api/v1/levels/{id}` | Get specific level |
+| GET | `/api/v1/subjects` | Get all subjects |
+| GET | `/api/v1/subjects/{id}` | Get specific subject |
+| GET | `/api/v1/content` | Get educational content |
+| GET | `/api/v1/content/{id}` | Get specific content |
+| GET | `/api/v1/search` | Search across all resources |
+| GET | `/api/v1/stats` | Get API statistics |
+| GET | `/health` | Health check |
 
 ## 🤝 Contributing
 
-This project is open for contributions from the Moroccan developer community. Please ensure all data is accurate and follows the established quality standards.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📧 Support
+
+- **Email**: prs.online.00@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/K11E3R/moroccan-education-API/issues)
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Contact
+## 🙏 Acknowledgments
 
-- **Email**: prs.online.00@gmail.com
-- **GitHub**: [K11E3R/moroccan-education-API](https://github.com/K11E3R/moroccan-education-API)
-
-## 🎯 Status
-
-**PRODUCTION READY** ✅
-
-The Moroccan Education API v1 is ready for public use with:
-- Complete v1 endpoints
-- 100% validated data
-- Sub-second response times
-- Comprehensive error handling
-- Real-time monitoring
-- Complete documentation
+- Moroccan Ministry of Education for the educational framework
+- All contributors and users of this API
 
 ---
 
-Made with ❤️ for the Moroccan Developer Community 🇲🇦
+Made with ❤️ for Morocco 🇲🇦
