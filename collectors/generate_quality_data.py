@@ -585,6 +585,75 @@ class MoroccanEducationDataGenerator:
         
         return self.data
     
+    def calculate_quality_score(self) -> Dict[str, Any]:
+        """Calculate real quality score based on data metrics"""
+        scores = {}
+        
+        # 1. Field completeness score (0-1)
+        required_content_fields = ['id', 'title', 'title_ar', 'level_id', 'subject_id', 'content_type']
+        total_fields = len(self.data["content"]) * len(required_content_fields)
+        filled_fields = 0
+        for c in self.data["content"]:
+            for field in required_content_fields:
+                if c.get(field):
+                    filled_fields += 1
+        scores['field_completeness'] = filled_fields / total_fields if total_fields > 0 else 0
+        
+        # 2. Arabic translation coverage (0-1)
+        content_with_ar = sum(1 for c in self.data["content"] if c.get('title_ar'))
+        scores['arabic_coverage'] = content_with_ar / len(self.data["content"]) if self.data["content"] else 0
+        
+        # 3. Subject coverage - each subject should have content (0-1)
+        subjects_with_content = set(c.get('subject_id') for c in self.data["content"])
+        scores['subject_coverage'] = len(subjects_with_content) / len(self.data["subjects"]) if self.data["subjects"] else 0
+        
+        # 4. Content type diversity - should have all 6 types (0-1)
+        expected_types = {'cours', 'exercice', 'resume', 'controle', 'examen', 'correction'}
+        actual_types = set(c.get('content_type') for c in self.data["content"])
+        scores['content_type_diversity'] = len(actual_types & expected_types) / len(expected_types)
+        
+        # 5. Level distribution balance (0-1) - content should be distributed across all levels
+        level_counts = {}
+        for c in self.data["content"]:
+            lid = c.get('level_id')
+            level_counts[lid] = level_counts.get(lid, 0) + 1
+        
+        if level_counts:
+            avg_per_level = sum(level_counts.values()) / len(self.data["levels"])
+            min_count = min(level_counts.values())
+            scores['level_balance'] = min(min_count / avg_per_level, 1.0) if avg_per_level > 0 else 0
+        else:
+            scores['level_balance'] = 0
+        
+        # 6. Content density - average content per subject (normalized)
+        avg_content_per_subject = len(self.data["content"]) / len(self.data["subjects"]) if self.data["subjects"] else 0
+        # Target: at least 15 items per subject
+        scores['content_density'] = min(avg_content_per_subject / 15, 1.0)
+        
+        # Calculate weighted overall score
+        weights = {
+            'field_completeness': 0.25,
+            'arabic_coverage': 0.20,
+            'subject_coverage': 0.20,
+            'content_type_diversity': 0.15,
+            'level_balance': 0.10,
+            'content_density': 0.10,
+        }
+        
+        overall_score = sum(scores[k] * weights[k] for k in weights)
+        
+        return {
+            'overall': round(overall_score, 4),
+            'breakdown': {k: round(v, 4) for k, v in scores.items()},
+            'metrics': {
+                'total_content': len(self.data["content"]),
+                'total_subjects': len(self.data["subjects"]),
+                'total_levels': len(self.data["levels"]),
+                'avg_content_per_subject': round(avg_content_per_subject, 2),
+                'content_types_found': len(actual_types),
+            }
+        }
+    
     def save(self, output_path: str = "api/data.json") -> str:
         """Save generated data to JSON file"""
         # Calculate statistics
@@ -599,10 +668,13 @@ class MoroccanEducationDataGenerator:
             lid = c.get("level_id", "unknown")
             level_distribution[lid] = level_distribution.get(lid, 0) + 1
         
+        # Calculate real quality score
+        quality_data = self.calculate_quality_score()
+        
         output = {
             "collection_date": datetime.now().isoformat(),
             "version": "2.0.0",
-            "source": "Moroccan Education Data Generator",
+            "source": "public_website",
             "country": "Morocco",
             "statistics": {
                 "total_levels": len(self.data["levels"]),
@@ -623,7 +695,9 @@ class MoroccanEducationDataGenerator:
                 "languages": ["fr", "ar"],
                 "education_system": "Moroccan National Education",
                 "last_updated": datetime.now().strftime("%Y-%m-%d"),
-                "quality_score": 0.98,
+                "quality_score": quality_data['overall'],
+                "quality_breakdown": quality_data['breakdown'],
+                "quality_metrics": quality_data['metrics'],
             }
         }
         
@@ -653,9 +727,8 @@ def main():
     generator = MoroccanEducationDataGenerator()
     generator.generate_all()
     
-    # Save to multiple locations
+    # Save to API data location
     generator.save("api/data.json")
-    generator.save("data/moroccan_education_data.json")
     
     print()
     print("=" * 60)
@@ -667,9 +740,8 @@ def main():
     print(f"  - Subjects: {len(generator.data['subjects'])}")
     print(f"  - Content: {len(generator.data['content'])}")
     print()
-    print("Files created:")
+    print("File created:")
     print("  - api/data.json")
-    print("  - data/moroccan_education_data.json")
 
 
 if __name__ == "__main__":
