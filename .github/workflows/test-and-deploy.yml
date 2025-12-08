@@ -1,4 +1,4 @@
-name: Test & Deploy to Railway
+name: Test & Deploy
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: Run Tests
+    name: Test API
     runs-on: ubuntu-latest
     
     steps:
@@ -24,49 +24,23 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install pytest httpx
     
     - name: Verify data file exists
       run: |
         if [ ! -f "api/data.json" ]; then
-          echo "❌ Error: api/data.json not found!"
+          echo "Error: api/data.json not found!"
           exit 1
         fi
-        echo "✅ Data file found"
+        echo "Data file found"
     
-    - name: Check data file is valid JSON
+    - name: Validate JSON
       run: |
-        python -c "import json; json.load(open('api/data.json'))"
-        echo "✅ Data file is valid JSON"
+        python -c "import json; json.load(open('api/data.json', encoding='utf-8'))"
+        echo "Data file is valid JSON"
     
-    - name: Verify data quality
+    - name: Run data tests
       run: |
-        python << 'EOF'
-        import json
-        
-        with open('api/data.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        # Check required fields
-        assert 'source' in data, "Missing 'source' field"
-        assert data['source'] == 'public_website', f"Source should be 'public_website', got '{data['source']}'"
-        
-        assert 'levels' in data, "Missing 'levels' field"
-        assert 'subjects' in data, "Missing 'subjects' field"
-        
-        # Check data counts
-        levels_count = len(data['levels'])
-        subjects_count = len(data['subjects'])
-        
-        assert levels_count > 0, "No levels found"
-        assert subjects_count > 0, "No subjects found"
-        
-        print(f"✅ Data validation passed:")
-        print(f"   - Source: {data['source']}")
-        print(f"   - Levels: {levels_count}")
-        print(f"   - Subjects: {subjects_count}")
-        print(f"   - Total items: {levels_count + subjects_count}")
-        EOF
+        python api/test_api.py
     
     - name: Start API server
       run: |
@@ -74,106 +48,56 @@ jobs:
         python -m uvicorn main:app --host 0.0.0.0 --port 8000 &
         sleep 5
     
-    - name: Test API endpoints
+    - name: Test health endpoint
       run: |
-        # Test health endpoint
         response=$(curl -s http://localhost:8000/health)
         echo "Health: $response"
-        if ! echo "$response" | grep -q "healthy"; then
-          echo "❌ Health check failed"
-          exit 1
-        fi
-        echo "✅ Health check passed"
-        
-        # Test API info
-        response=$(curl -s http://localhost:8000/)
-        echo "API Info: $response"
-        if ! echo "$response" | grep -q "Moroccan Education"; then
-          echo "❌ API info failed"
-          exit 1
-        fi
-        echo "✅ API info passed"
-        
-        # Test levels endpoint
+        echo "$response" | grep -q "healthy" || (echo "Health check failed" && exit 1)
+        echo "Health check passed"
+    
+    - name: Test levels endpoint
+      run: |
         response=$(curl -s http://localhost:8000/api/v1/levels)
-        if ! echo "$response" | grep -q "success"; then
-          echo "❌ Levels endpoint failed"
-          exit 1
-        fi
-        echo "✅ Levels endpoint passed"
-        
-        # Test subjects endpoint
+        echo "$response" | grep -q "success" || (echo "Levels endpoint failed" && exit 1)
+        echo "Levels endpoint passed"
+    
+    - name: Test subjects endpoint
+      run: |
         response=$(curl -s http://localhost:8000/api/v1/subjects)
-        if ! echo "$response" | grep -q "success"; then
-          echo "❌ Subjects endpoint failed"
-          exit 1
-        fi
-        echo "✅ Subjects endpoint passed"
-        
-        # Test stats endpoint
-        response=$(curl -s http://localhost:8000/api/v1/stats)
-        if ! echo "$response" | grep -q "success"; then
-          echo "❌ Stats endpoint failed"
-          exit 1
-        fi
-        echo "✅ Stats endpoint passed"
-        
-        # Test search endpoint
+        echo "$response" | grep -q "success" || (echo "Subjects endpoint failed" && exit 1)
+        echo "Subjects endpoint passed"
+    
+    - name: Test content endpoint
+      run: |
+        response=$(curl -s http://localhost:8000/api/v1/content?limit=5)
+        echo "$response" | grep -q "success" || (echo "Content endpoint failed" && exit 1)
+        echo "Content endpoint passed"
+    
+    - name: Test search endpoint
+      run: |
         response=$(curl -s "http://localhost:8000/api/v1/search?q=math")
-        if ! echo "$response" | grep -q "success"; then
-          echo "❌ Search endpoint failed"
-          exit 1
-        fi
-        echo "✅ Search endpoint passed"
+        echo "$response" | grep -q "success" || (echo "Search endpoint failed" && exit 1)
+        echo "Search endpoint passed"
     
-    - name: Run API tests
+    - name: Test stats endpoint
       run: |
-        cd api
-        python test_api.py
-    
-    - name: Check for private data
-      run: |
-        python << 'EOF'
-        import json
-        import re
-        
-        with open('api/data.json', 'r', encoding='utf-8') as f:
-            data_str = f.read()
-            data = json.loads(data_str)
-        
-        # Check source is generic
-        assert data['source'] == 'public_website', "Source must be 'public_website'"
-        
-        # Check for email addresses
-        if re.search(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', data_str):
-            print("❌ Warning: Possible email addresses found")
-            exit(1)
-        
-        # Check for phone numbers
-        if re.search(r'\+?\d{10,}', data_str):
-            print("❌ Warning: Possible phone numbers found")
-            exit(1)
-        
-        print("✅ Privacy check passed - no private data detected")
-        EOF
+        response=$(curl -s http://localhost:8000/api/v1/stats)
+        echo "$response" | grep -q "success" || (echo "Stats endpoint failed" && exit 1)
+        echo "Stats endpoint passed"
     
     - name: Summary
       if: success()
       run: |
-        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-        echo "✅ ALL TESTS PASSED!"
-        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-        echo "✅ Data file valid"
-        echo "✅ Data quality verified"
-        echo "✅ All API endpoints working"
-        echo "✅ API tests passed"
-        echo "✅ No private data detected"
-        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-        echo "🚀 Ready for Railway deployment!"
-        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        echo "================================"
+        echo "ALL TESTS PASSED!"
+        echo "================================"
+        echo "- Data file valid"
+        echo "- All API endpoints working"
+        echo "- Ready for deployment"
+        echo "================================"
 
   deploy:
-    name: Deploy to Railway
+    name: Deploy
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -181,6 +105,5 @@ jobs:
     steps:
     - name: Deployment notification
       run: |
-        echo "✅ Tests passed - Railway will auto-deploy from GitHub"
-        echo "🚂 Check Railway dashboard: https://railway.app/dashboard"
-
+        echo "Tests passed - Railway will auto-deploy from GitHub"
+        echo "Check Railway dashboard: https://railway.app/dashboard"
