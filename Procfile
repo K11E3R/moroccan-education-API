@@ -1,1 +1,1 @@
-web: cd api && ./start.sh
+web: /app/api/start.sh
