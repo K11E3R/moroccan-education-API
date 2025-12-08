@@ -1,7 +1,7 @@
 {
   "api": {
     "name": "Moroccan Education API",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "description": "Comprehensive API for Moroccan education data",
     "contact_email": "prs.online.00@gmail.com",
     "github": "https://github.com/K11E3R/moroccan-education-API"
@@ -28,7 +28,7 @@
     "delay_between_requests": 2.0,
     "max_concurrent_requests": 5,
     "timeout": 30,
-    "user_agent": "MoroccanEducationBot/2.0 (Educational Research)"
+    "user_agent": "MoroccanEducationBot/1.0 (Educational Research)"
   },
   "education_structure": {
     "categories": ["primaire", "college", "lycee"],

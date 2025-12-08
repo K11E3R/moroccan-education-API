@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Moroccan Education Public API v2.0
+Moroccan Education Public API v1.0
 Professional API with beautiful documentation
 """
 
@@ -23,7 +23,7 @@ def custom_openapi():
     
     openapi_schema = get_openapi(
         title="🇲🇦 Moroccan Education API",
-        version="2.0.0",
+        version="1.0.0",
         description="""
 # Moroccan Education Data API
 
@@ -81,7 +81,7 @@ A comprehensive public API providing access to educational resources for the Mor
 app = FastAPI(
     title="Moroccan Education API",
     description="Comprehensive API for Moroccan education data",
-    version="2.0.0",
+    version="1.0.0",
     docs_url=None,  # Disable default docs
     redoc_url=None,  # Disable default redoc
 )
@@ -546,7 +546,7 @@ LANDING_PAGE = """
                 A comprehensive public API providing access to educational resources 
                 for the entire Moroccan education system - from Primary to Baccalaureate
             </p>
-            <span class="version-badge">v2.0.0</span>
+            <span class="version-badge">v1.0.0</span>
             <span class="live-indicator">
                 <span class="live-dot"></span>
                 API Online
@@ -762,7 +762,7 @@ async def api_info():
     """
     return {
         "name": "Moroccan Education API",
-        "version": "2.0.0",
+        "version": "1.0.0",
         "description": "Comprehensive API for Moroccan education data",
         "endpoints": {
             "levels": "/api/v1/levels",
@@ -798,7 +798,7 @@ async def health_check():
             "content": content_count
         },
         "uptime_seconds": (datetime.now() - api_stats["start_time"]).total_seconds(),
-        "version": "2.0.0"
+        "version": "1.0.0"
     }
 
 
@@ -1090,7 +1090,7 @@ async def get_stats():
             "level_distribution": level_distribution,
             "languages": ["fr", "ar"],
             "collection_date": education_data.get("collection_date", "N/A"),
-            "api_version": "2.0.0",
+            "api_version": "1.0.0",
             "data_source": "Moroccan Education Websites"
         }
     }

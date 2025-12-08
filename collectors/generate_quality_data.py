@@ -673,7 +673,7 @@ class MoroccanEducationDataGenerator:
         
         output = {
             "collection_date": datetime.now().isoformat(),
-            "version": "2.0.0",
+            "version": "1.0.0",
             "source": "public_website",
             "country": "Morocco",
             "statistics": {
