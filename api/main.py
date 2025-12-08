@@ -734,6 +734,7 @@ async def custom_redoc():
         openapi_url="/openapi.json",
         title="Moroccan Education API - Reference",
         redoc_favicon_url="/favicon.png",
+        redoc_js_url="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js",
     )
 
 
