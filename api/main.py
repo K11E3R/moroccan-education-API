@@ -129,15 +129,15 @@ def load_data() -> Dict[str, Any]:
             try:
                 with open(path, 'r', encoding='utf-8') as f:
                     education_data = json.load(f)
-                print(f"✅ Loaded data from: {path}")
-                print(f"   Levels: {len(education_data.get('levels', []))}")
-                print(f"   Subjects: {len(education_data.get('subjects', []))}")
-                print(f"   Content: {len(education_data.get('content', []))}")
+                print(f"[OK] Loaded data from: {path}")
+                print(f"     Levels: {len(education_data.get('levels', []))}")
+                print(f"     Subjects: {len(education_data.get('subjects', []))}")
+                print(f"     Content: {len(education_data.get('content', []))}")
                 return education_data
             except Exception as e:
-                print(f"❌ Error loading {path}: {e}")
+                print(f"[ERROR] Loading {path}: {e}")
     
-    print("⚠️ No data file found, using empty dataset")
+    print("[WARN] No data file found, using empty dataset")
     return {"levels": [], "subjects": [], "content": [], "statistics": {}}
 
 
