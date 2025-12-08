@@ -1,2 +1,0 @@
-# Moroccan Education API Package
-
