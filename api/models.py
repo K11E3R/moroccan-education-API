@@ -140,4 +140,4 @@ class DataQualityReport(BaseModel):
     total_checks: int
     issues: List[Dict[str, Any]]
     timestamp: str
-    details: Dict[str, Any]
+    metrics: Dict[str, Any]
