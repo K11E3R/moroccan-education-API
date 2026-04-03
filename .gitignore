@@ -64,9 +64,12 @@ temp/
 
 # Data files (keep main ones)
 data/raw/
-data/cleaned/cleaned_data_*.json
+data/cleaned/
 data/enhanced_data_*.json
 
-# Don't ignore main data files
+# Pipeline reports (generated)
+pipelines/quality_report.json
+
+# Keep committed data
 !api/data.json
 !data/moroccan_education_data.json

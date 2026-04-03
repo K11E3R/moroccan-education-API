@@ -2,25 +2,46 @@
   "api": {
     "name": "Moroccan Education API",
     "version": "1.0.0",
-    "description": "Comprehensive API for Moroccan education data",
+    "description": "Comprehensive public API for Moroccan education data",
     "contact_email": "prs.online.00@gmail.com",
     "github": "https://github.com/K11E3R/moroccan-education-API"
   },
   "data_sources": [
     {
+      "name": "men.gov.ma",
+      "url": "https://www.men.gov.ma",
+      "description": "Ministry of National Education — Official curricula",
+      "type": "official"
+    },
+    {
       "name": "AlloSchool",
       "url": "https://www.alloschool.com",
-      "description": "Moroccan educational platform"
+      "description": "Courses, exercises, exams for all Moroccan education levels",
+      "type": "educational_platform"
     },
     {
       "name": "9rayti",
       "url": "https://9rayti.com",
-      "description": "Education resources portal"
+      "description": "Education resources, orientation, and study guides",
+      "type": "educational_platform"
     },
     {
       "name": "Dyrassa",
       "url": "https://www.dyrassa.com",
-      "description": "Educational content platform"
+      "description": "Educational content platform for Moroccan students",
+      "type": "educational_platform"
+    },
+    {
+      "name": "Telmidtice",
+      "url": "https://telmidtice.men.gov.ma",
+      "description": "Official e-learning platform by the Ministry",
+      "type": "official"
+    },
+    {
+      "name": "TaalimPress",
+      "url": "https://taalimpress.info",
+      "description": "Moroccan education news and resources",
+      "type": "news"
     }
   ],
   "scraping_config": {
@@ -50,6 +71,14 @@
   "quality_checks": {
     "min_title_length": 5,
     "required_fields": ["id", "title", "level_id", "subject_id", "content_type"],
-    "min_content_per_subject": 3
+    "min_content_per_subject": 3,
+    "min_arabic_coverage": 0.9,
+    "min_source_coverage": 0.8
+  },
+  "pipeline": {
+    "schedule": "daily at 06:00 UTC",
+    "validation_script": "pipelines/validate_data.py",
+    "generator_script": "collectors/generate_quality_data.py",
+    "report_path": "pipelines/quality_report.json"
   }
 }
