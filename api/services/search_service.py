@@ -1,7 +1,6 @@
 """Full-text search service with relevance scoring"""
 
 from typing import Dict, List, Optional, Any
-import re
 import unicodedata
 
 
