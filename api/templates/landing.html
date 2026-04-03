@@ -603,10 +603,15 @@
     </div>
 
     <script>
-    function showTab(id) {
+    function showTab(id, evt) {
         document.querySelectorAll('.code-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.code-panel').forEach(p => p.classList.remove('active'));
-        event.target.classList.add('active');
+        const activeTab = (evt && (evt.currentTarget || evt.target)) ||
+            document.querySelector('.code-tab[onclick*="showTab(\'' + id + '\'"]') ||
+            document.querySelector('.code-tab[onclick*="showTab(&quot;' + id + '&quot;"]');
+        if (activeTab) {
+            activeTab.classList.add('active');
+        }
         document.getElementById('panel-' + id).classList.add('active');
     }
     function copyCode(panelId) {
