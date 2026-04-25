@@ -14,7 +14,7 @@ beautifulsoup4==4.12.3
 lxml==6.1.0
 
 # Data Handling
-python-multipart==0.0.22
+python-multipart==0.0.26
 
 # Production Server
 gunicorn==23.0.0
