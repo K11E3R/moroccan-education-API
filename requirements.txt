@@ -1,20 +1,17 @@
-# Moroccan Education API - Dependencies
-# Python 3.10+
+# Moroccan Education API v1.0 — Dependencies
 
 # API Framework
-fastapi==0.115.5
-uvicorn[standard]==0.34.0
+fastapi>=0.115.0,<1.0
+uvicorn[standard]>=0.34.0,<1.0
+gunicorn>=23.0.0,<24.0
 
-# HTTP Client (for scraping)
-httpx==0.27.0
-aiohttp==3.13.4
+# Data handling
+python-multipart>=0.0.22,<1.0
 
-# HTML Parsing
-beautifulsoup4==4.12.3
-lxml==6.1.0
+# HTTP client (for scraping / collection pipelines)
+httpx>=0.27.0,<1.0
+aiohttp>=3.10.0,<4.0
 
-# Data Handling
-python-multipart==0.0.22
-
-# Production Server
-gunicorn==23.0.0
+# HTML parsing (for collection pipelines)
+beautifulsoup4>=4.12.0,<5.0
+lxml>=5.0.0,<6.0
